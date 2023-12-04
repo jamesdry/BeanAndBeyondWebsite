@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="icons/bean & beyond.ico" />
+    <title>Bean & Beyond Coffee Shop</title>
+  </head>
+  <body onload="loadingScreen()" id="bodys">
+    <p id="loadingText">loading . . . please wait.</p>
+    <img
+      id="loadingGIF"
+      src="img/bounceLoadingCup.gif"
+      alt="bounceCup"
+      style="width: 250px; height: auto"
+    />
+    <div id="loading">
+      <div class="progressBar">
+        <div class="color"></div>
+      </div>
+    </div>
+
+    <section class="welcome" id="welcomePage" style="display: none">
+      <div class="container">
+        <div class="row welcomeText">
+          <h1 class="hidden">Welcome to Bean & Beyond.</h1>
+        </div>
+      </div>
+    </section>
+
+    <div class="scrollDown" id="mouseAnimate" style="display: none">
+      <h3>scroll down.</h3>
+      <div class="mouse">
+        <div class="scroller"></div>
+      </div>
+    </div>
+    <div
+      id="video"
+      class="parallaxVideo"
+      style="display: none; height: 100vh"
+    ></div>
+
+    <div
+      class="parallax1"
+      id="coffeeShop"
+      style="display: none; height: 100vh"
+    ></div>
+    <nav
+      style="display: none"
+      class="navbar navbar-expand-lg sticky-top"
+      id="beansAndBeyondWebsite"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html#bodys">
+          <img
+            src="img/b&beyond.png"
+            alt="websiteLogo"
+            style="width: 120px; height: auto; cursor: pointer"
+          />
+        </a>
+        <div class="fullNavigation" id="offcanvas">
+          <a
+            href="javascript:void(0)"
+            class="closeButton"
+            onclick="closeSideBar()"
+            ><img
+              src="img/close.png"
+              alt="closeButton"
+              style="width: 30px; height: 30px"
+          /></a>
+          <div class="ms-auto offcanvas-content">
+            <a href="about.html">ABOUT</a>
+            <a href="merchandise.html">MERCHANDISE</a>
+            <a href="menu.html">MENU</a>
+            <a href="review.html" target="_blank">REVIEW</a>
+            <a href="contact.html">CONTACT US</a>
+          </div>
+        </div>
+        <a onclick="openSideBar()" style="margin-right: 50px; cursor: pointer"
+          ><img src="img/menu.png" alt="menu" style="width: 50px; height: 50px"
+        /></a>
+      </div>
+    </nav>
+
+    <section id="hook" style="display: none">
+      <div
+        class="container"
+        style="
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div class="row">
+          <h1 class="landingText">It's All About<b> Good Coffee.</b></h1>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="signatureBlend"
+      class="hidden"
+      style="display: none; height: 100vh"
+    >
+      <div class="container" style="margin-bottom: 300px">
+        <div class="row signature">
+          <div class="col-lg-6">
+            <img
+              src="img/neverBeenBetter.jpg.webp"
+              alt="neverBeenBetter"
+              style="width: 100%; margin-top: 20px; margin-bottom: 20px"
+            />
+          </div>
+          <div class="col-lg-6" style="background-color: #f7f4f1">
+            <h1>Our improved Signature Blend.</h1>
+            <p style="margin: 35px; text-align: center; line-height: 4vh">
+              Our iconic Signature Blend is the perfect combination and balance
+              of delicate Arabica and strong Robusta beans. In early 2023, we
+              improved its strength and taste by roasting our beans for just
+              that little bit longer. This subtle change resulted in a more
+              intense blend without losing its smooth taste we know you love.
+              It's bolder, smoother, tastier and better.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="home"
+      class="homepage"
+      style="display: none; margin-top: 100px"
+    >
+      <div class="container">
+        <div class="row text-center">
+          <div class="col text-center">
+            <h4 class="landingText2">Featured Drinks</h4>
+            <h1 class="backgroundText2">Kopi Ketus</h1>
+            <img
+              class="kopiLainHati hidden"
+              src="img/kopiLainHati.png"
+              alt="starbucks"
+              style="width: 50%; height: auto"
+            />
+            <h1 class="backgroundText">
+              Caramel Ribbon Crunch Creme Frappuccino
+            </h1>
+            <img
+              class="starbucks hidden"
+              src="img/starbucks.png"
+              alt="starbucks"
+              style="width: 40%; height: auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="partners"
+      id="ourPartners"
+      style="display: none; background-color: #7e5e52"
+    >
+      <div class="container">
+        <h1 class="partnersText text-center">Our Partners ...</h1>
+        <div class="row text-center logos">
+          <div class="col-lg-4 hidden logo lainHati">
+            <img
+              src="img/lainHati.png"
+              alt="lainHatiLogo"
+              style="width: 250px; height: auto"
+            />
+          </div>
+          <div class="col-lg-4 hidden logo">
+            <img
+              src="img/maxxLogo.png"
+              alt="maxxCoffeeLogo"
+              style="width: 400px; height: auto"
+            />
+          </div>
+          <div class="col-lg-4 hidden logo">
+            <img
+              src="img/starbucks-logo-png-transparent-0.png"
+              alt="starbucks"
+              style="width: 250px; height: auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="summary"
+      style="
+        display: none;
+        background-color: #f7f4f1;
+        border-top: 3px solid black;
+      "
+      id="companySummary"
+    >
+      <div
+        class="summaryText text-center"
+        style="height: 700px; background-color: #f7f4f1; font-size: 5vw"
+      >
+        <p>Why <b>Bean & Beyond</b> ?</p>
+        <p style="font-size: 3vw">
+          <b style="text-decoration: none">"Bean & Beyond"</b> conveys a meaning
+          that describes a concept that involves more than just ...
+        </p>
+        <h1
+          class="coffeeBeansText hidden"
+          style="font-size: 8vw; color: #4a2e2a"
+        >
+          Coffee Beans.
+        </h1>
+        <p style="font-size: 3vw">
+          We focus on
+          <b style="font-size: 7vw; text-decoration: none; color: #4a2e2a"
+            >coffee</b
+          >
+          as our main product.
+        </p>
+
+        <div class="container" style="background-color: #f7f4f1">
+          <div class="row">
+            <div class="col text-center designCup" style="margin: 20px">
+              <a href="merchandise.html">
+                <button type="button" class="btn btn-lg designButton">
+                  Design Your Custom Bean & Beyond Coffee Cup Now !
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax2"></div>
+    </section>
+
+    <section class="footer" id="myFooter" style="display: none">
+      <footer>
+        <div class="container">
+          <div class="row text-center">
+            <h5 style="font-size: 2vw; padding: 5px">
+              Bean & Beyond &copy; 2023
+            </h5>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    let timeline = anime.timeline({
+      duration: 2500,
+      easing: "easeOutExpo",
+      loop: true,
+    });
+
+    timeline.add({
+      targets: ".backgroundText",
+      keyframes: [{ translateY: -100 }, { translateY: 0 }],
+    });
+
+    timeline.add({
+      targets: ".backgroundText2",
+      keyframes: [{ translateY: -100 }, { translateY: 0 }],
+    });
+
+    timeline.add({
+      targets: ".offerOptionsCoffee",
+      keyframes: [{ translateY: -50 }, { translateY: 0 }],
+    });
+
+    timeline.add({
+      targets: ".offerOptionsSnacks",
+      keyframes: [{ translateY: -50 }, { translateY: 0 }],
+    });
+  </script>
+</html>

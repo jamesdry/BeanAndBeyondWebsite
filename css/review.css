@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e9dbc1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a2e2a;
+  border: 3px solid black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6e4b39;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e9dbc1;
+  font-family: "Poppins", sans-serif;
+  font-family: "Paytone One", sans-serif;
+}
+
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center h1 {
+  font-size: 5vw;
+}
+
+.scrollDown,
+.scrollDown1 {
+  position: absolute;
+  top: 500px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 34px;
+  height: 55px;
+}
+
+.scrollDown1 {
+  top: 1000px;
+}
+
+.scrollDown h3,
+.scrollDown1 h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1vw;
+  color: black;
+}
+
+.mouse {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid black;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: black;
+  animation-name: scrolling;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f4f1;
+}
+
+.category h1 {
+  font-size: 10vw;
+  text-align: center;
+  margin: 0;
+}
+
+.category {
+  padding: 2rem 0 1rem 0;
+  height: 100vh;
+  position: relative;
+  background-color: #f7f4f1;
+  text-align: center;
+}
+
+.intro {
+  margin-bottom: 1.5rem;
+  color: black;
+  display: block;
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.horizontalScroll {
+  height: 70%;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.images {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.theHorizontalImage {
+  width: 70%;
+  height: auto;
+  object-fit: fill;
+  margin: 0 auto;
+}
+
+.item img {
+  transition: 1s;
+  cursor: pointer;
+}
+
+.item img:hover {
+  transform: translateY(-3%);
+}

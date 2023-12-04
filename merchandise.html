@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/merchandise.css" />
+    <link rel="icon" href="icons/bean & beyond.ico" />
+    <title>Bean & Beyond Coffee Shop - Merchandise</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top" id="beansAndBeyondWebsite">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html#bodys">
+          <img
+            src="img/b&beyond.png"
+            alt="websiteLogo"
+            style="width: 120px; height: auto; cursor: pointer"
+          />
+        </a>
+        <div class="fullNavigation" id="offcanvas">
+          <a
+            href="javascript:void(0)"
+            class="closeButton"
+            onclick="closeSideBar()"
+            ><img
+              src="img/close.png"
+              alt="closeButton"
+              style="width: 30px; height: 30px"
+          /></a>
+          <div class="ms-auto offcanvas-content">
+            <a href="about.html">ABOUT</a>
+            <a href="merchandise.html">MERCHANDISE</a>
+            <a href="menu.html">MENU</a>
+            <a href="review.html">REVIEW</a>
+            <a href="contact.html">CONTACT US</a>
+          </div>
+        </div>
+        <a onclick="openSideBar()" style="margin-right: 50px; cursor: pointer"
+          ><img src="img/menu.png" alt="menu" style="width: 50px; height: 50px"
+        /></a>
+      </div>
+    </nav>
+
+    <section class="designCup animate" style="min-height: 700px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center" style="margin-top: 30px">
+            <div id="cup">
+              <img
+                src="img/coffeeCupuserInteraction/bean & beyond/bean___beyond-2-removebg-preview.png"
+                alt="withoutLogoCoffeeCup"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6" style="margin-top: 30px">
+            <div class="userInteract">
+              <h1 class="text-center" style="padding-top: 20px">
+                Design Your Own Custom Bean & Beyond Coffee Cup !
+              </h1>
+              <h5 style="margin-left: 20px; margin-top: 40px">
+                With Bean & Beyond Logo?
+              </h5>
+
+              <div id="dropdown">
+                <select
+                  name="designMenu"
+                  id="designMenu"
+                  style="margin: 20px; width: auto"
+                  class="form-select form-select"
+                  aria-label=".form-select example"
+                >
+                  <option value="1" data-img="withLogo">
+                    Yes, with logo please.
+                  </option>
+                  <option selected value="1" data-img="withoutLogo">
+                    No, thank you.
+                  </option>
+                </select>
+              </div>
+
+              <button
+                id="saveChanges"
+                type="button"
+                class="btn btn-sm"
+                style="
+                  background-color: #e9dbc1;
+                  margin-top: 5px;
+                  margin-left: 20px;
+                  border: 2px solid black;
+                "
+              >
+                Save Changes
+              </button>
+
+              <button
+                id="reset"
+                type="button"
+                class="btn btn-sm"
+                style="
+                  background-color: #e9dbc1;
+                  margin-top: 5px;
+                  margin-left: 20px;
+                  border: 2px solid black;
+                  text-decoration: none;
+                  color: black;
+                "
+              >
+                Reset
+              </button>
+
+              <h5
+                style="margin-left: 20px; margin-top: 40px; display: none"
+                id="cupColor"
+              >
+                Choose Your Coffee Cup Color ...
+              </h5>
+
+              <div class="container" style="display: none" id="cupColorPicker">
+                <div class="row">
+                  <div class="col-1" id="clickRedColor">
+                    <div class="col colorPickerRed"></div>
+                  </div>
+                  <div class="col-1" id="clickOrangeColor">
+                    <div class="col colorPickerOrange"></div>
+                  </div>
+                  <div class="col-1" id="clickYellowColor">
+                    <div class="col colorPickerYellow"></div>
+                  </div>
+                  <div class="col-1" id="clickGreenColor">
+                    <div class="col colorPickerGreen"></div>
+                  </div>
+                  <div class="col-1" id="clickBlueColor">
+                    <div class="col colorPickerBlue"></div>
+                  </div>
+                  <div class="col-1" id="clickVanillaColor">
+                    <div class="col colorPickerVanilla"></div>
+                  </div>
+                  <div class="col-1" id="clickPurpleColor">
+                    <div class="col colorPickerPurple"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Transparent Cup Without Logo -->
+              <img
+                src="img/coffeeCupuserInteraction/bean & beyond/bean___beyond-2-removebg-preview.png"
+                alt="withoutLogos"
+                id="withoutLogo"
+                class="hidden"
+              />
+
+              <!-- Transparent Cup With Logo -->
+              <img
+                src="img/coffeeCupuserInteraction/bean & beyond/2-removebg-preview.png"
+                alt="withLogos"
+                id="withLogo"
+                class="hidden"
+              />
+
+              <!-- Red Cup With Logo -->
+              <img
+                src="img/coffeeCupuserInteraction/bean & beyond/1-removebg-preview.png"
+                alt="redLogo"
+                id="redCupWithLogo"
+                class="hidden"
+              />
+
+              <!-- Red Cup Without Logo -->
+              <img
+                src="img/coffeeCupuserInteraction/bean & beyond/2-removebg-nologo.png"
+                alt="redWithoutLogo"
+                id="redCupWithoutLogo"
+                class="hidden"
+              />
+
+              <!-- Orange Cup With Logo -->
+              <img
+                src="img/coffeeCupuserInteraction/bean & beyond/3-removebg-preview.png"
+                alt="orangeLogo"
+                id="orangeCupWithLogo"
+                class="hidden"
+              />
+
+              <!-- Orange Cup Without Logo -->
+              <img
+                src="img/coffeeCupuserInteraction/bean & beyond/6-removebg-nologo.png"
+                alt="orangeWithoutLogo"
+                id="orangeCupWithoutLogo"
+                class="hidden"
+              />
+
+              <!-- Yellow Cup With Logo -->
+              <img
+                src="img/coffeeCupuserInteraction/bean & beyond/4-removebg-preview.png"
+                alt="yellowLogo"
+                id="yellowCupWithLogo"
+                class="hidden"
+              />
+
+              <!-- Yellow Cup Without Logo -->
+              <img
+                src="img/coffeeCupuserInteraction/bean & beyond/8-removebg-nologo.png"
+                alt="yellowWithoutLogo"
+                id="yellowCupWithoutLogo"
+                class="hidden"
+              />
+
+              <!-- Green Cup With Logo -->
+              <img
+                src="img/coffeeCupuserInteraction/bean & beyond/5-removebg-preview.png"
+                alt="greenLogo"
+                id="greenCupWithLogo"
+                class="hidden"
+              />
+
+              <!-- Green Cup Without Logo -->
+              <img
+                src="img/coffeeCupuserInteraction/bean & beyond/10-removebg-nologo.png"
+                alt="greenWithoutLogo"
+                id="greenCupWithoutLogo"
+                class="hidden"
+              />
+
+              <!-- Blue Cup With Logo -->
+              <img
+                src="img/coffeeCupuserInteraction/bean & beyond/6-removebg-preview.png"
+                alt="blueLogo"
+                id="blueCupWithLogo"
+                class="hidden"
+              />
+
+              <!-- Blue Cup Without Logo -->
+              <img
+                src="img/coffeeCupuserInteraction/bean & beyond/12-removebg-nologo.png"
+                alt="blueWithoutLogo"
+                id="blueCupWithoutLogo"
+                class="hidden"
+              />
+
+              <!-- Vanilla Cup With Logo -->
+              <img
+                src="img/coffeeCupuserInteraction/bean & beyond/7-removebg-preview.png"
+                alt="vanillaLogo"
+                id="vanillaCupWithLogo"
+                class="hidden"
+              />
+
+              <!-- Vanilla Cup Without Logo -->
+              <img
+                src="img/coffeeCupuserInteraction/bean & beyond/14-removebg-nologo.png"
+                alt="vanillaWithoutLogo"
+                id="vanillaCupWithoutLogo"
+                class="hidden"
+              />
+
+              <!-- Purple / Pink Cup With Logo -->
+              <img
+                src="img/coffeeCupuserInteraction/bean & beyond/8-removebg-preview.png"
+                alt="purpleLogo"
+                id="purpleCupWithLogo"
+                class="hidden"
+              />
+
+              <!-- Purple / Pink Cup Without Logo -->
+              <img
+                src="img/coffeeCupuserInteraction/bean & beyond/16-removebg-nologo.png"
+                alt="purpleWithoutLogo"
+                id="purpleCupWithoutLogo"
+                class="hidden"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="js/merchandise.js"></script>
+  <script></script>
+</html>

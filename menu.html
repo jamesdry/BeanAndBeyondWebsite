@@ -1,0 +1,2484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="icon" href="icons/bean & beyond.ico" />
+    <title>Bean & Beyond Coffee Shop - Menu</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top" id="beansAndBeyondWebsite">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html#bodys">
+          <img
+            src="img/b&beyond.png"
+            alt="websiteLogo"
+            style="width: 120px; height: auto; cursor: pointer"
+          />
+        </a>
+        <div class="fullNavigation" id="offcanvas">
+          <a
+            href="javascript:void(0)"
+            class="closeButton"
+            onclick="closeSideBar()"
+            ><img
+              src="img/close.png"
+              alt="closeButton"
+              style="width: 30px; height: 30px"
+          /></a>
+          <div class="ms-auto offcanvas-content">
+            <a href="about.html">ABOUT</a>
+            <a href="merchandise.html">MERCHANDISE</a>
+            <a href="menu.html">MENU</a>
+            <a href="review.html">REVIEW</a>
+            <a href="contact.html">CONTACT US</a>
+          </div>
+        </div>
+        <a onclick="openSideBar()" style="margin-right: 50px; cursor: pointer"
+          ><img src="img/menu.png" alt="menu" style="width: 50px; height: 50px"
+        /></a>
+      </div>
+    </nav>
+
+    <section class="menu" id="allMenu">
+      <div class="container">
+        <h1
+          class="h1 text-center sticky-top"
+          style="
+            padding: 10px;
+            z-index: 1;
+            background-color: #e9dbc1;
+            font-weight: bold;
+          "
+        >
+          Menu
+        </h1>
+        <h1
+          class="h1 text-center sticky-top"
+          style="padding: 10px; z-index: 1; background-color: #e9dbc1"
+        >
+          Drinks
+        </h1>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-AMERICANO.jpg"
+                  alt="americano"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Americano</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop2"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-CAFFE-LATTE.jpg"
+                  alt="caffeLatte"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Caffe Latte</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop3"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-CAPPUCINO.jpg"
+                  alt="cappucino"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Cappucino</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop4"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-SIGNATURE-MOCHA.jpg"
+                  alt="signatureMocha"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Signature Mocha</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop5"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-VANILLA-LATTE.JPG"
+                  alt="vanillaLatte"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Vanilla Latte</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop6"
+            >
+              <div class="card">
+                <img
+                  src="img/IMG_1635-Caramel-machiato-Atas_copy.jpg"
+                  alt="caramelMacchiato"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Caramel Macchiato</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop7"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-LATTE-FREDDO.jpg"
+                  alt="latteFredo"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Latte Fredo</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop8"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-COLD-BREW-BLACK-2.jpg"
+                  alt="coldBrewBlack"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Cold Brew Black</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop9"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-COLD-BREW-LATTE.jpg"
+                  alt="coldBrewLatte"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Cold Brew Latte</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop10"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-BELGIAN-CHOCOLATE.jpg"
+                  alt="belgianChocolate"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Belgian Chocolate</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop11"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-CARAMEL-BELGIAN-CHOCOLATE.jpg"
+                  alt="caramelBelgianChocolate"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Caramel Belgian Chocolate</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop12"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-HAZELNUT-BELGIAN-CHOCOLATE.jpg"
+                  alt="hazelnutBelgianChocolate"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Hazelnut Belgian Chocolate</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop13"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-GREEN-TEA-LATTE.jpg"
+                  alt="greenTeaLatte"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Green Tea Latte</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop14"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-VANILLA-BLACK-TEA-LATTE-2.jpg"
+                  alt="vanillaBlackTeaLatte"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Vanilla Black Tea Latte</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop15"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-ENGLISH-BREAKFAST-TEA.jpg"
+                  alt="englishBreakfastTea"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">English Breakfast Tea</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop16"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-CHAMOMILE-TEA.jpg"
+                  alt="chamomileTea"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Chamomile Tea</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop17"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-EARL-GREY-TEA.jpg"
+                  alt="earlGreyTea"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Earl Grey Tea</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop18"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-JASMINE-GREEN-TEA.jpg"
+                  alt="jasmineGreenTea"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Jasmine Green Tea</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop19"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-MORROCANT-MINT-TEA.jpg"
+                  alt="morrocantMintTea"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Morrocant Mint Tea</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop20"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-BREWED-HIBISCUS-TEA.jpg"
+                  alt="brewedHibiscusTea"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Brewed Hibiscus Tea</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop21"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-BREWED-BLACK-TEA.jpg"
+                  alt="brewedBlackTea"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Brewed Black Tea</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop22"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-ICED-SHAKEN-LEMONADE-HIBISCUS-TEA.jpg"
+                  alt="ShakenLemonadeHibiscusTea"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Shaken Lemonade Hibiscus Tea</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop23"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-ICED-SHAKEN-LEMONADE-BLACK-TEA.jpg"
+                  alt="iceShakenLemonadeBlackTea"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Iced Shaken Lemonade Black Tea</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop24"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-ESPRESSO-FRAPPE-VANILLA-FRAPPE-HAZELNUT-FRAPPE-2.jpg"
+                  alt="espressoFrappe"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Espresso Frappe</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop25"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-CHOCOLATE-CHIP-CREAM-FRAPPE.jpg"
+                  alt="mochaChipFrappe"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Mocha Chip Frappe</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop26"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-MOCHA-FRAPPE.jpg"
+                  alt="signatureMochaFrappe"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Signature Mocha Frappe</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop27"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-CARAMEL-FRAPPE.jpg"
+                  alt="caramelFrappe"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Caramel Frappe</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop28"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-ESPRESSO-FRAPPE-VANILLA-FRAPPE-HAZELNUT-FRAPPE.jpg"
+                  alt="vanillaOrHazelnutFrappe"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Vanilla / Hazelnut Frappe</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop29"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-GREEN-TEA-CREAM-FRAPPE.jpg"
+                  alt="greenTeaCreamFrappe"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Green Tea Cream Frappe</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop30"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-CHOCOLATE-CHIP-CREAM-FRAPPE.jpg"
+                  alt="chocolateChipCreamFrappe"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Chocolate Chip Cream Frappe</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop31"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-COOKIE-AND-CREAM-FRAPPE.jpg"
+                  alt="cookiesAndCreamFrappe"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Cookies & Cream Frappe</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop32"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-CARAMEL-CREAM-FRAPPE.jpg"
+                  alt="caramelCreamFrappe"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Caramel Cream Frappe</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop33"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-VANILLA-CREAM-FRAPPE-HAZELNUT-CREAM-FRAPPE.jpg"
+                  alt="vanillaOrHazelnutCreamFrappe"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Vanilla / Hazelnut Cream Frappe</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop34"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-MANGO-PASSION-FRUIT.jpg"
+                  alt="mangoPassionFruit"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Mango Passion Fruit</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop35"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-THREE-BERRY.jpg"
+                  alt="threeBerry"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Three Berry</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 hidden">
+            <a
+              style="text-decoration: none"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop36"
+            >
+              <div class="card">
+                <img
+                  src="img/MAXX-COFFEE-ESPRESSO.jpg"
+                  alt="espresso"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Espresso</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Americano
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-AMERICANO.jpg"
+                alt="americano"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                European approach to an American style coffee, combining the
+                perfect espresso with steaming hot water. Also available with
+                ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop2"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Caffe Latte
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-CAFFE-LATTE.jpg"
+                alt="caffeLatte"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                Rich espresso with perfectly steamed milk, topped with delicate
+                foamed milk to complete this popular espresso drink. Also
+                available with ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop3"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Cappucino
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-CAPPUCINO.jpg"
+                alt="cappucino"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                This coffee house classic combines espresso with the perfect
+                amount of steamed milk, topped with deep and velvety layers of
+                foam for stronger coffee flavor.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop4"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Signature Mocha
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-SIGNATURE-MOCHA.jpg"
+                alt="signatureMocha"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                The perfect espresso with bittersweet chocolate, and combined
+                with steamed milk. Also available with ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop5"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Vanilla Latte
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-VANILLA-LATTE.JPG"
+                alt="vanillaLatte"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                A rich espresso with perfectly steamed milk and vanilla syrup.
+                Also available with ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop6"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Caramel Macchiato
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/IMG_1635-Caramel-machiato-Atas_copy.jpg"
+                alt="caramelMacchiato"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                A delightful signature of Maxx Coffee. A creamy blend of vanilla
+                and intense espresso, topped with smooth velvety foam and
+                caramel sauce. Also available with ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop7"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Latte Fredo
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-LATTE-FREDDO.jpg"
+                alt="latteFredo"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                A rich espresso with perfectly steamed milk, topped with
+                delicate foamed milk, served in brown sugar on top of the
+                coffee.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop8"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Cold Brew Black
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-COLD-BREW-BLACK-2.jpg"
+                alt="coldBrewBlack"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                American style black coffee, combining the perfect espresso with
+                cold water and ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop9"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Cold Brew Latte
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-COLD-BREW-LATTE.jpg"
+                alt="coldBrewLatte"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                A rich espresso with perfect latte combined with cold water and
+                ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop10"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Belgian Chocolate
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-BELGIAN-CHOCOLATE.jpg"
+                alt="belgianChocolate"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                Another signature of Maxx Coffee. A creamy blend of decadent
+                chocolate and freshly steamed milk. Also available with ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop11"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Caramel Belgian Chocolate
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-CARAMEL-BELGIAN-CHOCOLATE.jpg"
+                alt="caramelBelgianChocolate"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                A creamy blend of decadent chocolate, freshly steamed milk and
+                caramel syrup. Also available with ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop12"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Hazelnut Belgian Chocolate
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-HAZELNUT-BELGIAN-CHOCOLATE.jpg"
+                alt="hazelnutBelgianChocolate"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                A creamy blend of decadent chocolate, freshly steamed milk and
+                hazelnut syrup. Also available with ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop13"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Green Tea Latte
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-GREEN-TEA-LATTE.jpg"
+                alt="greenTeaLatte"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                A perfect combination between Maxx Coffee’s special green tea
+                and fresh milk. Also available with ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop14"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Vanilla Black Tea Latte
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-VANILLA-BLACK-TEA-LATTE-2.jpg"
+                alt="vanillaBlackTeaLatte"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                A combination of black tea, vanilla, and fresh steamed milk.
+                Also available with ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop15"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                English Breakfast Tea
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-ENGLISH-BREAKFAST-TEA.jpg"
+                alt="englishBreakfastTea"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                Subtly sweet and highly fragrant, a rich flavor of a fresh
+                brewed tea. Also available with ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop16"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Chamomile Tea
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-CHAMOMILE-TEA.jpg"
+                alt="chamomileTea"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                Subtly sweet and highly fragrant, a rich flavor of a fresh
+                brewed tea, served in chamomile flavors. Also available with
+                ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop17"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Earl Grey Tea
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-EARL-GREY-TEA.jpg"
+                alt="earlGreyTea"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                Subtly sweet and peach flavor, a rich peach flavor in a fresh
+                brewed tea. Also available with ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop18"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Jasmine Green Tea
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-JASMINE-GREEN-TEA.jpg"
+                alt="jasmineGreenTea"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                A rich flavor of a fresh brewed tea, combined with Jasmine
+                Flower extract and our green tea. Also available with ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop19"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Morrocant Mint Tea
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-MORROCANT-MINT-TEA.jpg"
+                alt="morrocantMintTea"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                A rich morrocant mint dominant flavor of a fresh brewed tea,
+                Also available with ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop20"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Brewed Hibiscus Tea
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-BREWED-HIBISCUS-TEA.jpg"
+                alt="brewedHibiscusTea"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                Full-leaf and botanical teas, fresh brewed by the cup.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop21"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Brewed Black Tea
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-BREWED-BLACK-TEA.jpg"
+                alt="brewedBlackTea"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                Full-black-leaf teas, fresh brewed by the cup.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop22"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Shaken Lemonade Hibiscus Tea
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-ICED-SHAKEN-LEMONADE-HIBISCUS-TEA.jpg"
+                alt="ShakenLemonadeHibiscusTea"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                Lightly sweetened Maxx Coffee iced tea, with premium lemonade
+                and shaken with ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop23"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Iced Shaken Lemonade Black Tea
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-ICED-SHAKEN-LEMONADE-BLACK-TEA.jpg"
+                alt="iceShakenLemonadeBlackTea"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                Lightly sweetened Maxx Coffee black tea, with premium lemonade
+                and shaken with ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop24"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Espresso Frappe
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-ESPRESSO-FRAPPE-VANILLA-FRAPPE-HAZELNUT-FRAPPE-2.jpg"
+                alt="espressoFrappe"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                A rich flavor of espresso frappe blended with milk and ice,
+                topped with whipped cream.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop25"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Mocha Chip Frappe
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-CHOCOLATE-CHIP-CREAM-FRAPPE.jpg"
+                alt="mochaChipFrappe"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                Coffee based frappe blended with milk, chocolate chips, and ice,
+                topped with whipped cream and chocolate sauce.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop26"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Signature Mocha Frappe
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-MOCHA-FRAPPE.jpg"
+                alt="signatureMochaFrappe"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                The perfect espresso with bittersweet chocolate, combined with
+                steamed milk, and topped with whipped cream.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop27"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Caramel Frappe
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-CARAMEL-FRAPPE.jpg"
+                alt="caramelFrappe"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                An espresso blended with milk and caramel syrup, and topped with
+                whipped cream.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop28"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Vanilla / Hazelnut Frappe
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-ESPRESSO-FRAPPE-VANILLA-FRAPPE-HAZELNUT-FRAPPE.jpg"
+                alt="vanillaOrHazelnutFrappe"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                An espresso blended with milk and vanilla or hazelnut syrup, and
+                topped with whipped cream.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop29"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Green Tea Cream Frappe
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-GREEN-TEA-CREAM-FRAPPE.jpg"
+                alt="greenTeaCreamFrappe"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                A sweet and creamy blend of Maxx Coffee’s green tea, fresh milk,
+                and ice, topped with whipped cream.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop30"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Chocolate Chip Cream Frappe
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-CHOCOLATE-CHIP-CREAM-FRAPPE.jpg"
+                alt="chocolateChipCreamFrappe"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                Cream based frappe blended with milk, chocolate chips, and ice,
+                topped with whipped cream and chocolate sauce.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop31"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Cookies & Cream Frappe
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-COOKIE-AND-CREAM-FRAPPE.jpg"
+                alt="cookiesAndCreamFrappe"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                One of Maxx Coffee’s signature. A blend of vanilla, milk and
+                cookies, topped with whipped cream.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop32"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Caramel Cream Frappe
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-CARAMEL-CREAM-FRAPPE.jpg"
+                alt="caramelCreamFrappe"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                A creamy blend of milk and caramel syrup, and topped with
+                whipped cream.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop33"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Vanilla / Hazelnut Cream Frappe
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-VANILLA-CREAM-FRAPPE-HAZELNUT-CREAM-FRAPPE.jpg"
+                alt="vanillaOrHazelnutCreamFrappe"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                A creamy blend of milk and vanilla or hazelnut syrup, and topped
+                with whipped cream.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop34"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Mango Passion Fruit
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-MANGO-PASSION-FRUIT.jpg"
+                alt="mangoPassionFruit"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                A blend of mango, fresh passion fruit, and ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop35"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Three Berry
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-THREE-BERRY.jpg"
+                alt="threeBerry"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                A blend of blueberry, raspberry, and strawberry, with black tea
+                and ice.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop36"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Espresso
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/MAXX-COFFEE-ESPRESSO.jpg"
+                alt="espresso"
+                style="width: 100%"
+              />
+              <p style="margin-top: 20px; text-align: justify">
+                The perfect blend of a perfected technique, resulting in a nutty
+                flavor with rich and vibrant notes, in addition to zesty lemon
+                overtones and a bittersweet chocolate finish.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script></script>
+</html>

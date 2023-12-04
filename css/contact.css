@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e9dbc1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a2e2a;
+  border: 3px solid black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6e4b39;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e9dbc1;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  animation-name: opacity;
+  animation-duration: 2s;
+  font-family: "Paytone One", sans-serif;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fullNavigation {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #f7f4f1;
+  overflow-x: hidden;
+  transition: 0.4s;
+  opacity: 0.98;
+}
+
+.offcanvas-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.fullNavigation a {
+  text-decoration: none;
+  font-size: 50px;
+  color: #4a2e2a;
+  display: block;
+  padding: 10px;
+}
+
+.fullNavigation a:hover {
+  text-decoration: underline;
+}
+
+.fullNavigation .closeButton {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+}

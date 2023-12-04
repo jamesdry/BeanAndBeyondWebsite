@@ -1,0 +1,404 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Paytone One", sans-serif;
+  /*
+  font-family: "Poppins", sans-serif !important;
+  */
+}
+
+.coffeeBeansText {
+  font-family: "Paytone One", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e9dbc1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a2e2a;
+  border: 3px solid black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6e4b39;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e9dbc1;
+  text-align: center;
+}
+
+.navbar,
+.landingText {
+  animation-name: opacity;
+  animation-duration: 2s;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#loading {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  background-color: #e9dbc1;
+}
+
+#loadingText {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+}
+
+#loadingGIF {
+  position: absolute;
+  top: 31%;
+  left: 43%;
+}
+
+@media screen and (max-width: 1000px) {
+  #loading {
+    top: 50%;
+    left: 10%;
+  }
+
+  #loadingText {
+    top: 45%;
+    left: 10%;
+  }
+
+  #loadingGIF {
+    top: 31%;
+    left: 30%;
+  }
+
+  .starbucks {
+    width: 80% !important;
+  }
+
+  .kopiLainHati {
+    width: 100% !important;
+  }
+
+  .summaryText {
+    height: 450px !important;
+  }
+}
+
+.progressBar {
+  position: relative;
+  height: 14px;
+  width: 11111%;
+  border: 2px solid #c68642;
+  border-radius: 10px;
+}
+
+.progressBar .color {
+  position: absolute;
+  background-color: #4a2e2a;
+  width: 0px;
+  height: 10px;
+  border-radius: 15px;
+  animation: loading 4s infinite linear;
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.fullNavigation {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #f7f4f1;
+  overflow-x: hidden;
+  transition: 0.4s;
+  opacity: 0.98;
+}
+
+.offcanvas-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.fullNavigation a {
+  text-decoration: none;
+  font-size: 50px;
+  color: #4a2e2a;
+  display: block;
+  padding: 10px;
+}
+
+.fullNavigation a:hover {
+  text-decoration: underline;
+}
+
+.fullNavigation .closeButton {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+}
+
+.landingText {
+  font-size: 6vw;
+  color: #7e5e52;
+}
+
+.landingText b {
+  color: #4a2e2a;
+}
+
+.landingText2 {
+  font-size: 4vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.hidden {
+  opacity: 0;
+  transition: 3s;
+  transform: translateX(-100%);
+}
+
+.landingText2 {
+  opacity: 0;
+  transition: 1.5s;
+  transform: translateX(-100%);
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.showText {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.backgroundText,
+.backgroundText2 {
+  position: relative;
+  top: 7%;
+  font-size: 7vw;
+  color: #f7f4f1;
+  -webkit-text-stroke: 3px black;
+}
+
+.backgroundText2 {
+  top: 7%;
+}
+
+.logo:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.offerText h1 {
+  font-size: 8vw;
+  color: #f7f4f1;
+}
+
+.offerText:nth-child(1) {
+  transition-delay: 200ms;
+}
+
+.offerText:nth-child(2) {
+  transition-delay: 400ms;
+}
+
+.offerText:nth-child(3) {
+  transition-delay: 600ms;
+}
+
+.whatWeOffer {
+  background-color: #7e5e52;
+  padding-bottom: 30px;
+}
+
+.partners {
+  background-color: #f7f4f1;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.logo img {
+  margin-top: 30px;
+}
+
+.partnersText {
+  margin-top: 20px;
+  font-size: 7vw;
+}
+
+.parallax1,
+.parallax2 {
+  width: 100%;
+  height: 800px;
+  background-image: url("/img/coffeeShop.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parallax2 {
+  background-image: url("/img/cooffeeBeans.jpg");
+}
+
+.parallaxVideo {
+  background-image: url("/img/coffeeVideo.mp4");
+  width: 100%;
+  height: 850px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.summaryText b {
+  color: #c68642;
+  text-decoration: underline;
+  font-family: "Poppins", sans-serif;
+}
+
+.summaryText p {
+  font-family: "Poppins", sans-serif;
+  margin: 20px;
+}
+
+.summaryText {
+  font-family: "Poppins", sans-serif;
+}
+
+.lainHati img {
+  border-radius: 50%;
+}
+
+.welcomeText {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.welcomeText h1 {
+  font-size: 10vw;
+  color: #f7f4f1;
+}
+
+.scrollDown {
+  position: absolute;
+  top: 500px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 34px;
+  height: 55px;
+}
+
+.scrollDown h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1vw;
+  color: #f7f4f1;
+}
+
+.mouse {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #f7f4f1;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #f7f4f1;
+  animation-name: scrolling;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+.signature {
+  display: flex;
+  background-color: #f7f4f1;
+  align-items: center;
+  margin: 20px;
+  box-shadow: 3px 3px 3px 3px black;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.designCup .designButton {
+  background-color: #7e5e52;
+  color: #f7f4f1;
+  font-size: 4vw;
+  border: 3px solid black;
+  box-shadow: 5px 5px 10px black;
+  transition: 1s;
+}
+
+.designCup .designButton:hover {
+  transform: translateY(-15%);
+}
