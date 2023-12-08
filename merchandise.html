@@ -59,7 +59,9 @@
       </div>
     </nav>
 
-    <section class="designCup animate" style="min-height: 700px">
+    <!-- Design Cup User Interaction -->
+
+    <section class="designCup animate" style="height: 100vh">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 text-center" style="margin-top: 30px">
@@ -78,7 +80,6 @@
               <h5 style="margin-left: 20px; margin-top: 40px">
                 With Bean & Beyond Logo?
               </h5>
-
               <div id="dropdown">
                 <select
                   name="designMenu"
@@ -95,7 +96,6 @@
                   </option>
                 </select>
               </div>
-
               <button
                 id="saveChanges"
                 type="button"
@@ -105,6 +105,7 @@
                   margin-top: 5px;
                   margin-left: 20px;
                   border: 2px solid black;
+                  margin-bottom: 20px;
                 "
               >
                 Save Changes
@@ -119,20 +120,17 @@
                   margin-top: 5px;
                   margin-left: 20px;
                   border: 2px solid black;
-                  text-decoration: none;
-                  color: black;
+                  margin-bottom: 20px;
                 "
               >
                 Reset
               </button>
-
               <h5
-                style="margin-left: 20px; margin-top: 40px; display: none"
+                style="margin-left: 20px; margin-top: 10px; display: none"
                 id="cupColor"
               >
                 Choose Your Coffee Cup Color ...
               </h5>
-
               <div class="container" style="display: none" id="cupColorPicker">
                 <div class="row">
                   <div class="col-1" id="clickRedColor">
@@ -158,7 +156,23 @@
                   </div>
                 </div>
               </div>
-
+              <button
+                id="placeOrder"
+                type="button"
+                class="btn btn-sm"
+                style="
+                  display: none;
+                  background-color: #e9dbc1;
+                  margin-top: 5px;
+                  margin-left: 20px;
+                  margin-bottom: 50px;
+                  border: 2px solid black;
+                  text-decoration: none;
+                  color: black;
+                "
+              >
+                Place Order
+              </button>
               <!-- Transparent Cup Without Logo -->
               <img
                 src="img/coffeeCupuserInteraction/bean & beyond/bean___beyond-2-removebg-preview.png"
@@ -166,7 +180,6 @@
                 id="withoutLogo"
                 class="hidden"
               />
-
               <!-- Transparent Cup With Logo -->
               <img
                 src="img/coffeeCupuserInteraction/bean & beyond/2-removebg-preview.png"
@@ -174,7 +187,6 @@
                 id="withLogo"
                 class="hidden"
               />
-
               <!-- Red Cup With Logo -->
               <img
                 src="img/coffeeCupuserInteraction/bean & beyond/1-removebg-preview.png"
@@ -182,7 +194,6 @@
                 id="redCupWithLogo"
                 class="hidden"
               />
-
               <!-- Red Cup Without Logo -->
               <img
                 src="img/coffeeCupuserInteraction/bean & beyond/2-removebg-nologo.png"
@@ -190,7 +201,6 @@
                 id="redCupWithoutLogo"
                 class="hidden"
               />
-
               <!-- Orange Cup With Logo -->
               <img
                 src="img/coffeeCupuserInteraction/bean & beyond/3-removebg-preview.png"
@@ -198,7 +208,6 @@
                 id="orangeCupWithLogo"
                 class="hidden"
               />
-
               <!-- Orange Cup Without Logo -->
               <img
                 src="img/coffeeCupuserInteraction/bean & beyond/6-removebg-nologo.png"
@@ -206,7 +215,6 @@
                 id="orangeCupWithoutLogo"
                 class="hidden"
               />
-
               <!-- Yellow Cup With Logo -->
               <img
                 src="img/coffeeCupuserInteraction/bean & beyond/4-removebg-preview.png"
@@ -214,7 +222,6 @@
                 id="yellowCupWithLogo"
                 class="hidden"
               />
-
               <!-- Yellow Cup Without Logo -->
               <img
                 src="img/coffeeCupuserInteraction/bean & beyond/8-removebg-nologo.png"
@@ -222,7 +229,6 @@
                 id="yellowCupWithoutLogo"
                 class="hidden"
               />
-
               <!-- Green Cup With Logo -->
               <img
                 src="img/coffeeCupuserInteraction/bean & beyond/5-removebg-preview.png"
@@ -230,7 +236,6 @@
                 id="greenCupWithLogo"
                 class="hidden"
               />
-
               <!-- Green Cup Without Logo -->
               <img
                 src="img/coffeeCupuserInteraction/bean & beyond/10-removebg-nologo.png"
@@ -238,7 +243,6 @@
                 id="greenCupWithoutLogo"
                 class="hidden"
               />
-
               <!-- Blue Cup With Logo -->
               <img
                 src="img/coffeeCupuserInteraction/bean & beyond/6-removebg-preview.png"
@@ -246,7 +250,6 @@
                 id="blueCupWithLogo"
                 class="hidden"
               />
-
               <!-- Blue Cup Without Logo -->
               <img
                 src="img/coffeeCupuserInteraction/bean & beyond/12-removebg-nologo.png"
@@ -254,7 +257,6 @@
                 id="blueCupWithoutLogo"
                 class="hidden"
               />
-
               <!-- Vanilla Cup With Logo -->
               <img
                 src="img/coffeeCupuserInteraction/bean & beyond/7-removebg-preview.png"
@@ -262,7 +264,6 @@
                 id="vanillaCupWithLogo"
                 class="hidden"
               />
-
               <!-- Vanilla Cup Without Logo -->
               <img
                 src="img/coffeeCupuserInteraction/bean & beyond/14-removebg-nologo.png"
@@ -270,7 +271,6 @@
                 id="vanillaCupWithoutLogo"
                 class="hidden"
               />
-
               <!-- Purple / Pink Cup With Logo -->
               <img
                 src="img/coffeeCupuserInteraction/bean & beyond/8-removebg-preview.png"
@@ -278,12 +278,530 @@
                 id="purpleCupWithLogo"
                 class="hidden"
               />
-
               <!-- Purple / Pink Cup Without Logo -->
               <img
                 src="img/coffeeCupuserInteraction/bean & beyond/16-removebg-nologo.png"
                 alt="purpleWithoutLogo"
                 id="purpleCupWithoutLogo"
+                class="hidden"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Questionaire user preferences -->
+    <section
+      id="quiz"
+      class="recommendation animate"
+      style="height: 100vh; margin-top: 450px"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center" style="margin-top: 30px">
+            <div id="productPreview">
+              <img
+                class="animate"
+                src=""
+                alt="product will appear here"
+                style="color: #e9dbc1; width: 100%"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6" style="margin-top: 30px">
+            <div class="rightSide">
+              <h1 class="text-center" style="padding-top: 20px">
+                Recommendation Questionaire.
+              </h1>
+
+              <h5 style="margin-left: 20px; margin-top: 40px">
+                What are you looking for ?
+              </h5>
+
+              <div id="productSelection">
+                <select
+                  name="product"
+                  id="ourProducts"
+                  style="margin: 20px; width: auto"
+                  class="form-select form-select"
+                  aria-label=".form-select example"
+                >
+                  <option>Snacks For Breakfast.</option>
+                  <option>Coffee.</option>
+                </select>
+
+                <button
+                  id="saveProduct"
+                  type="button"
+                  class="btn btn-sm"
+                  style="
+                    background-color: #e9dbc1;
+                    margin-top: 5px;
+                    margin-left: 20px;
+                    border: 2px solid black;
+                    margin-bottom: 20px;
+                  "
+                >
+                  Save Preferences
+                </button>
+                <button
+                  id="resetProduct"
+                  type="button"
+                  class="btn btn-sm"
+                  style="
+                    background-color: #e9dbc1;
+                    margin-top: 5px;
+                    margin-left: 20px;
+                    border: 2px solid black;
+                    margin-bottom: 20px;
+                  "
+                >
+                  Reset Preferences
+                </button>
+              </div>
+
+              <!-- Question 1 -->
+
+              <h5
+                style="margin-left: 20px; margin-top: 10px; display: none"
+                id="burgerOrWraps"
+              >
+                Do you like burger or wraps ?
+              </h5>
+              <div id="burgerOrWrapsDropdown">
+                <select
+                  name="burgerOrWraps"
+                  id="burgerOrWrapsSelection"
+                  style="margin: 20px; width: auto; display: none"
+                  class="form-select form-select"
+                  aria-label=".form-select example"
+                >
+                  <option>Burger.</option>
+                  <option>Wraps.</option>
+                </select>
+
+                <div style="display: flex">
+                  <button
+                    id="saveBurger"
+                    type="button"
+                    class="btn btn-sm"
+                    style="
+                      background-color: #e9dbc1;
+                      margin-top: 5px;
+                      margin-left: 20px;
+                      border: 2px solid black;
+                      margin-bottom: 20px;
+                      display: none;
+                    "
+                  >
+                    Save
+                  </button>
+                  <button
+                    id="resetBurger"
+                    type="button"
+                    class="btn btn-sm"
+                    style="
+                      background-color: #e9dbc1;
+                      margin-top: 5px;
+                      margin-left: 20px;
+                      border: 2px solid black;
+                      margin-bottom: 20px;
+                      display: none;
+                    "
+                  >
+                    Reset
+                  </button>
+                </div>
+              </div>
+
+              <!-- Question 2 -->
+
+              <h5
+                style="margin-left: 20px; margin-top: 10px; display: none"
+                id="chicken"
+              >
+                Do you like chicken ?
+              </h5>
+              <div id="chickenDropdown">
+                <select
+                  name="chickenYesNo"
+                  id="chickenYesNo"
+                  style="margin: 20px; width: auto; display: none"
+                  class="form-select form-select"
+                  aria-label=".form-select example"
+                >
+                  <option>Yes.</option>
+                  <option>No.</option>
+                </select>
+
+                <div style="display: flex">
+                  <button
+                    id="saveChicken"
+                    type="button"
+                    class="btn btn-sm"
+                    style="
+                      background-color: #e9dbc1;
+                      margin-top: 5px;
+                      margin-left: 20px;
+                      border: 2px solid black;
+                      margin-bottom: 20px;
+                      display: none;
+                    "
+                  >
+                    Save
+                  </button>
+                  <button
+                    id="resetChicken"
+                    type="button"
+                    class="btn btn-sm"
+                    style="
+                      background-color: #e9dbc1;
+                      margin-top: 5px;
+                      margin-left: 20px;
+                      border: 2px solid black;
+                      margin-bottom: 20px;
+                      display: none;
+                    "
+                  >
+                    Reset
+                  </button>
+                </div>
+              </div>
+
+              <!-- Question 3 -->
+              <h5
+                style="margin-left: 20px; margin-top: 10px; display: none"
+                id="eggs"
+              >
+                Do you like eggs ?
+              </h5>
+              <div id="eggsDropdown">
+                <select
+                  name="eggsYesNo"
+                  id="eggsYesNo"
+                  style="margin: 20px; width: auto; display: none"
+                  class="form-select form-select"
+                  aria-label=".form-select example"
+                >
+                  <option>Yes.</option>
+                  <option>No.</option>
+                </select>
+
+                <div style="display: flex">
+                  <button
+                    id="saveEggs"
+                    type="button"
+                    class="btn btn-sm"
+                    style="
+                      background-color: #e9dbc1;
+                      margin-top: 5px;
+                      margin-left: 20px;
+                      border: 2px solid black;
+                      margin-bottom: 20px;
+                      display: none;
+                    "
+                  >
+                    Save
+                  </button>
+                  <button
+                    id="resetEggs"
+                    type="button"
+                    class="btn btn-sm"
+                    style="
+                      background-color: #e9dbc1;
+                      margin-top: 5px;
+                      margin-left: 20px;
+                      border: 2px solid black;
+                      margin-bottom: 20px;
+                      display: none;
+                    "
+                  >
+                    Reset
+                  </button>
+                </div>
+              </div>
+
+              <!-- Question 4 -->
+              <h5
+                style="margin-left: 20px; margin-top: 10px; display: none"
+                id="bacon"
+              >
+                Do you like bacon ?
+              </h5>
+              <div id="baconDropdown">
+                <select
+                  name="baconYesNo"
+                  id="baconYesNo"
+                  style="margin: 20px; width: auto; display: none"
+                  class="form-select form-select"
+                  aria-label=".form-select example"
+                >
+                  <option>Yes.</option>
+                  <option>No.</option>
+                </select>
+
+                <div style="display: flex">
+                  <button
+                    id="saveBacon"
+                    type="button"
+                    class="btn btn-sm"
+                    style="
+                      background-color: #e9dbc1;
+                      margin-top: 5px;
+                      margin-left: 20px;
+                      border: 2px solid black;
+                      margin-bottom: 20px;
+                      display: none;
+                    "
+                  >
+                    Save
+                  </button>
+                  <button
+                    id="resetBacon"
+                    type="button"
+                    class="btn btn-sm"
+                    style="
+                      background-color: #e9dbc1;
+                      margin-top: 5px;
+                      margin-left: 20px;
+                      border: 2px solid black;
+                      margin-bottom: 20px;
+                      display: none;
+                    "
+                  >
+                    Reset
+                  </button>
+                </div>
+              </div>
+
+              <!-- Question 5 -->
+              <h5
+                style="margin-left: 20px; margin-top: 10px; display: none"
+                id="sausage"
+              >
+                Do you like sausage ?
+              </h5>
+              <div id="sausageDropdown">
+                <select
+                  name="sausageYesNo"
+                  id="sausageYesNo"
+                  style="margin: 20px; width: auto; display: none"
+                  class="form-select form-select"
+                  aria-label=".form-select example"
+                >
+                  <option>Yes.</option>
+                  <option>No.</option>
+                </select>
+
+                <div style="display: flex">
+                  <button
+                    id="saveSausage"
+                    type="button"
+                    class="btn btn-sm"
+                    style="
+                      background-color: #e9dbc1;
+                      margin-top: 5px;
+                      margin-left: 20px;
+                      border: 2px solid black;
+                      margin-bottom: 20px;
+                      display: none;
+                    "
+                  >
+                    Save
+                  </button>
+                  <button
+                    id="resetSausage"
+                    type="button"
+                    class="btn btn-sm"
+                    style="
+                      background-color: #e9dbc1;
+                      margin-top: 5px;
+                      margin-left: 20px;
+                      border: 2px solid black;
+                      margin-bottom: 20px;
+                      display: none;
+                    "
+                  >
+                    Reset
+                  </button>
+                </div>
+              </div>
+
+              <!-- Question 6 -->
+              <h5
+                style="margin-left: 20px; margin-top: 10px; display: none"
+                id="spinach"
+              >
+                Do you like spinach ?
+              </h5>
+              <div id="spinachDropdown">
+                <select
+                  name="spinachYesNo"
+                  id="spinachYesNo"
+                  style="margin: 20px; width: auto; display: none"
+                  class="form-select form-select"
+                  aria-label=".form-select example"
+                >
+                  <option>Yes.</option>
+                  <option>No.</option>
+                </select>
+
+                <div style="display: flex">
+                  <button
+                    id="saveSpinach"
+                    type="button"
+                    class="btn btn-sm"
+                    style="
+                      background-color: #e9dbc1;
+                      margin-top: 5px;
+                      margin-left: 20px;
+                      border: 2px solid black;
+                      margin-bottom: 20px;
+                      display: none;
+                    "
+                  >
+                    Save
+                  </button>
+                  <button
+                    id="resetSpinach"
+                    type="button"
+                    class="btn btn-sm"
+                    style="
+                      background-color: #e9dbc1;
+                      margin-top: 5px;
+                      margin-left: 20px;
+                      border: 2px solid black;
+                      margin-bottom: 20px;
+                      display: none;
+                    "
+                  >
+                    Reset
+                  </button>
+                </div>
+              </div>
+
+              <!-- Question 7 -->
+              <h5
+                style="margin-left: 20px; margin-top: 10px; display: none"
+                id="cheddar"
+              >
+                Do you like cheddar ?
+              </h5>
+              <div id="cheddarDropdown">
+                <select
+                  name="cheddarYesNo"
+                  id="cheddarYesNo"
+                  style="margin: 20px; width: auto; display: none"
+                  class="form-select form-select"
+                  aria-label=".form-select example"
+                >
+                  <option>Yes.</option>
+                  <option>No.</option>
+                </select>
+
+                <div style="display: flex">
+                  <button
+                    id="saveCheddar"
+                    type="button"
+                    class="btn btn-sm"
+                    style="
+                      background-color: #e9dbc1;
+                      margin-top: 5px;
+                      margin-left: 20px;
+                      border: 2px solid black;
+                      margin-bottom: 20px;
+                      display: none;
+                    "
+                  >
+                    Save
+                  </button>
+                  <button
+                    id="resetCheddar"
+                    type="button"
+                    class="btn btn-sm"
+                    style="
+                      background-color: #e9dbc1;
+                      margin-top: 5px;
+                      margin-left: 20px;
+                      border: 2px solid black;
+                      margin-bottom: 20px;
+                      display: none;
+                    "
+                  >
+                    Reset
+                  </button>
+                </div>
+              </div>
+
+              <!-- Get Product Recommendation -->
+              <button
+                id="recommendProduct"
+                type="button"
+                class="btn btn-sm"
+                style="
+                  background-color: #e9dbc1;
+                  margin-top: 5px;
+                  margin-left: 20px;
+                  border: 2px solid black;
+                  margin-bottom: 20px;
+                  display: none;
+                "
+              >
+                Get Product Recommendation
+              </button>
+
+              <div
+                id="recommendedProduct"
+                class="text-center"
+                style="margin: 20px; font-size: 2vw"
+              >
+                <h1></h1>
+              </div>
+              <a
+                id="seeDetails"
+                class="linkToProducts animate"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 30px;
+                  background-color: black;
+                  color: white;
+                  text-decoration: none;
+                  padding: 20px;
+                  font-size: 2vw;
+                  display: none;
+                  cursor: pointer;
+                "
+              >
+                See Details .
+              </a>
+              <a
+                id="answerQuestionaire"
+                class="answerquiz animate"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 30px;
+                  background-color: black;
+                  color: white;
+                  text-decoration: none;
+                  padding: 20px;
+                  font-size: 2vw;
+                  display: none;
+                  cursor: pointer;
+                "
+              >
+                Answer Questionaire.
+              </a>
+
+              <!-- Product Pictures -->
+              <img
+                src="img/chickenMapleSandwich.jpg"
+                alt="chickenMapleSandwich"
+                id="chickenMapleSandwich"
                 class="hidden"
               />
             </div>

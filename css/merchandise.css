@@ -86,25 +86,34 @@ body {
 }
 
 #cup,
-.userInteract {
+#productPreview {
   box-shadow: 3px 3px 5px black;
 }
 
-#cup {
+#cup,
+#productPreview {
   background-color: #f7f4f1;
   width: 100%;
   height: 100%;
   border: 3px solid black;
 }
 
-.userInteract {
+#productPreview {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.userInteract,
+.rightSide {
   background-color: #f7f4f1;
   width: 100%;
   height: 100%;
   font-family: "Poppins", sans-serif;
 }
 
-.userInteract h1 {
+.userInteract h1,
+.rightSide h1 {
   font-family: "Paytone One", sans-serif;
 }
 
@@ -125,6 +134,7 @@ body {
   border: 2px solid black;
   padding: 20px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .col-1 {
@@ -157,12 +167,48 @@ body {
 }
 
 .animate {
-  opacity: 0;
+  opacity: 0.5;
   transition: 2s;
-  transform: translateX(-100%);
+  transform: translateX(-50%);
 }
 
 .show {
   opacity: 1;
   transform: translateX(0);
+}
+
+#saveChanges,
+#reset,
+#clickRedColor,
+#clickOrangeColor,
+#clickYellowColor,
+#clickGreenColor,
+#clickBlueColor,
+#clickVanillaColor,
+#clickPurpleColor,
+#placeOrder {
+  transition: 0.5s;
+}
+
+#saveChanges:hover,
+#reset:hover,
+#clickRedColor:hover,
+#clickOrangeColor:hover,
+#clickYellowColor:hover,
+#clickGreenColor:hover,
+#clickBlueColor:hover,
+#clickVanillaColor:hover,
+#clickPurpleColor:hover,
+#placeOrder:hover {
+  transform: translateY(-10%);
+}
+
+.linkToProducts,
+.answerquiz {
+  transition: 1s;
+}
+
+.linkToProducts:hover,
+.answerquiz:hover {
+  transform: translateY(-10%);
 }

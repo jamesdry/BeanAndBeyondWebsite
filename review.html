@@ -26,9 +26,47 @@
     <title>Bean & Beyond Coffee Shop - Menu Review</title>
   </head>
   <body>
+    <section>
+      <nav class="navbar navbar-expand-lg fixed-top" id="beansAndBeyondWebsite">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html#bodys">
+            <img
+              src="img/b&beyond.png"
+              alt="websiteLogo"
+              style="width: 120px; height: auto; cursor: pointer"
+            />
+          </a>
+          <div class="fullNavigation" id="offcanvas">
+            <a
+              href="javascript:void(0)"
+              class="closeButton"
+              onclick="closeSideBar()"
+              ><img
+                src="img/close.png"
+                alt="closeButton"
+                style="width: 30px; height: 30px"
+            /></a>
+            <div class="ms-auto offcanvas-content">
+              <a href="about.html">ABOUT</a>
+              <a href="merchandise.html">MERCHANDISE</a>
+              <a href="menu.html">MENU</a>
+              <a href="review.html">REVIEW</a>
+              <a href="contact.html">CONTACT US</a>
+            </div>
+          </div>
+          <a onclick="openSideBar()" style="margin-right: 50px; cursor: pointer"
+            ><img
+              src="img/menu.png"
+              alt="menu"
+              style="width: 50px; height: 50px"
+          /></a>
+        </div>
+      </nav>
+    </section>
+
     <section class="firstContainer">
-      <div class="center">
-        <h1>Welcome To Our Review Menu Page.</h1>
+      <div class="center animateText">
+        <h1>Welcome To Our Menu Review Page.</h1>
       </div>
       <div class="scrollDown" id="mouseAnimate">
         <h3>scroll down.</h3>
@@ -38,13 +76,22 @@
       </div>
     </section>
 
-    <section class="category">
+    <section
+      id="firstCategory"
+      class="category"
+      style="border-top: 3px solid black"
+    >
       <div class="container">
         <div class="row">
           <div class="col">
             <div class="intro">
-              <h1>Food.</h1>
-              <h3>Hot Breakfast.</h3>
+              <h1>Morning.</h1>
+              <h3>Breakfast Sandwiches & Wraps.</h3>
+              <div class="scrollDown2" id="mouseAnimate">
+                <div class="mouse">
+                  <div class="scroller"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -53,25 +100,343 @@
       <div class="horizontalScroll">
         <div class="images" id="horizontalScrollImage">
           <div class="item">
-            <img
-              class="theHorizontalImage"
-              src="img/chickenMapleSandwich.jpg"
-              alt="baconSausageEggWrap"
-            />
+            <a href="chickenMapleSandwich.html">
+              <img
+                class="theHorizontalImage"
+                src="img/chickenMapleSandwich.jpg"
+                alt="chickenMapleSandwich"
+              />
+            </a>
           </div>
           <div class="item">
-            <img
-              class="theHorizontalImage"
-              src="img/baconSausageEggWrap.jpg"
-              alt="baconSausageEggWrap"
-            />
+            <a href="baconSausageEggWrap.html">
+              <img
+                class="theHorizontalImage"
+                src="img/baconSausageEggWrap.jpg"
+                alt="baconSausageEggWrap"
+              />
+            </a>
           </div>
           <div class="item">
-            <img
-              class="theHorizontalImage"
-              src="img/baconSausageEggWrap.jpg"
-              alt="baconSausageEggWrap"
-            />
+            <a href="impossibleBreakfastSandwich.html">
+              <img
+                class="theHorizontalImage"
+                src="img/impossibleBreakfastSandwich.jpg"
+                alt="impossibleBreakfastSandwich"
+              />
+            </a>
+          </div>
+          <div class="item">
+            <a href="baconGoudaEggSandwich.html">
+              <img
+                class="theHorizontalImage"
+                src="img/baconGouda&eggSandwich.jpg"
+                alt="baconGouda&eggSandwich"
+              />
+            </a>
+          </div>
+          <div class="item">
+            <a href="doubleSmokedBaconSandwich.html">
+              <img
+                class="theHorizontalImage"
+                src="img/doubleSmokedBaconSandwich.jpg"
+                alt="doubleSmokedBaconSandwich"
+              />
+            </a>
+          </div>
+          <div class="item">
+            <a href="turkeyBaconSandwich.html">
+              <img
+                class="theHorizontalImage"
+                src="img/turkeyBaconSandwich.jpg"
+                alt="turkeyBaconSandwich"
+              />
+            </a>
+          </div>
+          <div class="item">
+            <a href="sausageEggCheddarSandwich.html">
+              <img
+                class="theHorizontalImage"
+                src="img/sausageEggCheddarSandwich.jpg"
+                alt="sausageEggCheddarSandwich"
+              />
+            </a>
+          </div>
+          <div class="item">
+            <a href="spinachFetaWrap.html">
+              <img
+                class="theHorizontalImage"
+                src="img/spinachFetaWrap.jpg"
+                alt="spinachFetaWrap"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category2" style="border-top: 3px solid black">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="intro">
+              <h1>Snacks.</h1>
+              <h3>Egg Bites.</h3>
+              <div class="scrollDown2" id="mouseAnimate">
+                <div class="mouse">
+                  <div class="scroller"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="horizontalScroll2">
+        <div class="images2" id="horizontalScrollImage">
+          <div class="item2">
+            <a href="kaleMushroomEggBites.html">
+              <img
+                class="theHorizontalImage"
+                src="img/kale&MushroomEggBites.jpg"
+                alt="kale"
+              />
+            </a>
+          </div>
+          <div class="item2">
+            <a href="baconEggBites.html">
+              <img
+                class="theHorizontalImage"
+                src="img/baconEggBites.jpg"
+                alt="baconEggBites"
+              />
+            </a>
+          </div>
+          <div class="item2">
+            <a href="eggWhiteRoastedEggBites.html">
+              <img
+                class="theHorizontalImage"
+                src="img/eggWhiteRoastedEggBites.jpg"
+                alt="eggWhiteRoastedEggBites"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category3" style="border-top: 3px solid black">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="intro">
+              <h1>Lunch.</h1>
+              <h3>Warm Sandwiches.</h3>
+              <div class="scrollDown3" id="mouseAnimate">
+                <div class="mouse">
+                  <div class="scroller"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="horizontalScroll3">
+        <div class="images3" id="horizontalScrollImage">
+          <div class="item3">
+            <a href="crispyGrilledCheeseSourdough.html">
+              <img
+                class="theHorizontalImage"
+                src="img/crispyGrilledCheeseSourdough.jpg"
+                alt="crispyGrilledCheeseSourdough"
+              />
+            </a>
+          </div>
+          <div class="item3">
+            <a href="hamSwissSandwich.html">
+              <img
+                class="theHorizontalImage"
+                src="img/hamSwiss.jpg"
+                alt="hamSwiss"
+              />
+            </a>
+          </div>
+          <div class="item3">
+            <a href="turkeyProvolone.html">
+              <img
+                class="theHorizontalImage"
+                src="img/turkeyProvolone.jpg"
+                alt="turkeyProvolone"
+              />
+            </a>
+          </div>
+          <div class="item3">
+            <a href="tomatoMozarellaSandwich.html">
+              <img
+                class="theHorizontalImage"
+                src="img/tomatoMozarella.jpg"
+                alt="tomatoMozarella"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category4" style="border-top: 3px solid black">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="intro">
+              <h1>Hot Coffees.</h1>
+              <h3>Americano's, Cappucino's, Espresso, Latte's, and Mocha's.</h3>
+              <div class="scrollDown4" id="mouseAnimate">
+                <div class="mouse">
+                  <div class="scroller"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="horizontalScroll4">
+        <div class="images4" id="horizontalScrollImage">
+          <div class="item4">
+            <a href="caffeAmericano.html">
+              <img
+                class="theHorizontalImage"
+                src="img/caffeAmericano.jpg"
+                alt="caffeAmericano"
+              />
+            </a>
+          </div>
+          <div class="item4">
+            <a href="cappuccino.html">
+              <img
+                class="theHorizontalImage"
+                src="img/cappuccino.jpg"
+                alt="cappuccino"
+              />
+            </a>
+          </div>
+          <div class="item4">
+            <a href="espresso.html">
+              <img
+                class="theHorizontalImage"
+                src="img/espresso.jpg"
+                alt="espresso"
+              />
+            </a>
+          </div>
+          <div class="item4">
+            <a href="espressoConPanna.html">
+              <img
+                class="theHorizontalImage"
+                src="img/espressoConPanna.jpg"
+                alt="espressoConPanna"
+              />
+            </a>
+          </div>
+          <div class="item4">
+            <a href="gingerBreadLatte.html">
+              <img
+                class="theHorizontalImage"
+                src="img/gingerbreadLatte.jpg"
+                alt="gingerbreadLatte"
+              />
+            </a>
+          </div>
+          <div class="item4">
+            <a href="sugarCookieAlmondMilkLatte.html">
+              <img
+                class="theHorizontalImage"
+                src="img/sugarCookieAlmondmilkLatte.jpg"
+                alt="sugarCookieAlmondmilkLatte"
+              />
+            </a>
+          </div>
+          <div class="item4">
+            <a href="caramelBruleeLatte.html">
+              <img
+                class="theHorizontalImage"
+                src="img/caramelBruleeLatte.jpg"
+                alt="caramelBruleeLatte"
+              />
+            </a>
+          </div>
+          <div class="item4">
+            <a href="chestnutPralineLatte.html">
+              <img
+                class="theHorizontalImage"
+                src="img/ChestnutPralineLatte.jpg"
+                alt="ChestnutPralineLatte"
+              />
+            </a>
+          </div>
+          <div class="item4">
+            <a href="pumpkinSpiceLatte.html">
+              <img
+                class="theHorizontalImage"
+                src="img/pumpkinSpiceLatte.jpg"
+                alt="pumpkinSpiceLatte"
+              />
+            </a>
+          </div>
+          <div class="item4">
+            <a href="caffeLatte.html">
+              <img
+                class="theHorizontalImage"
+                src="img/caffeLatte.jpg"
+                alt="caffeLatte"
+              />
+            </a>
+          </div>
+          <div class="item4">
+            <a href="cinnamonDolceLatte.html">
+              <img
+                class="theHorizontalImage"
+                src="img/cinnamonDolceLatte.jpg"
+                alt="cinnamonDolceLatte"
+              />
+            </a>
+          </div>
+          <div class="item4">
+            <a href="peppermintMocha.html">
+              <img
+                class="theHorizontalImage"
+                src="img/peppermintMocha.jpg"
+                alt="peppermintMocha"
+              />
+            </a>
+          </div>
+          <div class="item4">
+            <a href="peppermintWhiteChocoMocha.html">
+              <img
+                class="theHorizontalImage"
+                src="img/peppermintWhiteChocolateMocha.jpg"
+                alt="peppermintWhiteChocolateMocha"
+              />
+            </a>
+          </div>
+          <div class="item4">
+            <a href="caffeMocha.html">
+              <img
+                class="theHorizontalImage"
+                src="img/caffeMocha.jpg"
+                alt="caffeMocha"
+              />
+            </a>
+          </div>
+          <div class="item4">
+            <a href="whiteChocolateMocha.html">
+              <img
+                class="theHorizontalImage"
+                src="img/whiteChocolateMocha.jpg"
+                alt="whiteChocolateMocha"
+              />
+            </a>
           </div>
         </div>
       </div>

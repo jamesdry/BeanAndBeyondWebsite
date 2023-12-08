@@ -100,6 +100,14 @@ body {
   .summaryText {
     height: 450px !important;
   }
+
+  .scrollDown h3 {
+    font-size: 2.5vw !important;
+  }
+
+  .find h3 {
+    font-size: 3vw !important;
+  }
 }
 
 .progressBar {
@@ -192,7 +200,7 @@ body {
 
 .hidden {
   opacity: 0;
-  transition: 3s;
+  transition: 2.5s;
   transform: translateX(-100%);
 }
 
@@ -401,4 +409,51 @@ body {
 
 .designCup .designButton:hover {
   transform: translateY(-15%);
+}
+
+.find {
+  text-decoration: none;
+  color: #f7f4f1;
+}
+
+.find h3 {
+  background-color: #7e5e52;
+  padding: 20px;
+  font-size: 2vw;
+  transition: 0.5s;
+  border: 3px solid black;
+  border-radius: 100px;
+}
+
+.find h3:hover {
+  background-color: #4a2e2a;
+  transform: translateY(-3%);
+}
+
+.quiz {
+  background-color: #f7f4f1;
+  border: 3px solid black;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 5px 3px 5px black;
+}
+
+.answer {
+  text-decoration: none;
+  color: #f7f4f1;
+}
+
+.answer h3 {
+  background-color: black;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 1s;
+}
+
+.answer h3:hover {
+  transform: translateY(-5%);
+}
+
+.recommend h3 {
+  padding: 20px;
 }

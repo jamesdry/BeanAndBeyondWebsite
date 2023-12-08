@@ -31,6 +31,61 @@ body {
   font-family: "Paytone One", sans-serif;
 }
 
+.navbar {
+  animation-name: opacity;
+  animation-duration: 2s;
+  font-family: "Paytone One", sans-serif;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fullNavigation {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #f7f4f1;
+  overflow-x: hidden;
+  transition: 0.4s;
+  opacity: 0.98;
+}
+
+.offcanvas-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.fullNavigation a {
+  text-decoration: none;
+  font-size: 50px;
+  color: #4a2e2a;
+  display: block;
+  padding: 10px;
+}
+
+.fullNavigation a:hover {
+  text-decoration: underline;
+}
+
+.fullNavigation .closeButton {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+}
+
 .center {
   height: 100vh;
   display: flex;
@@ -43,7 +98,9 @@ body {
 }
 
 .scrollDown,
-.scrollDown1 {
+.scrollDown2,
+.scrollDown3,
+.scrollDown4 {
   position: absolute;
   top: 500px;
   right: 0;
@@ -54,15 +111,25 @@ body {
   height: 55px;
 }
 
-.scrollDown1 {
-  top: 1000px;
+.scrollDown2,
+.scrollDown3,
+.scrollDown4 {
+  top: 600px;
 }
 
 .scrollDown h3,
-.scrollDown1 h3 {
+.scrollDown2 h3,
+.scrollDown3 h3,
+.scrollDown4 h3 {
   font-family: "Poppins", sans-serif;
   font-size: 1vw;
   color: black;
+}
+
+@media screen and (max-width: 1000px) {
+  .scrollDown h3 {
+    font-size: 2.5vw !important;
+  }
 }
 
 .mouse {
@@ -75,6 +142,10 @@ body {
   box-sizing: content-box;
 }
 
+.scrollDown4 .mouse {
+  border: 2px solid #f7f4f1;
+}
+
 .scroller {
   width: 3px;
   height: 10px;
@@ -84,6 +155,10 @@ body {
   animation-duration: 2.2s;
   animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
   animation-iteration-count: infinite;
+}
+
+.scrollDown4 .scroller {
+  background-color: #f7f4f1;
 }
 
 @keyframes scrolling {
@@ -100,26 +175,39 @@ body {
   }
 }
 
-.category {
+.category,
+.category2,
+.category3,
+.category4 {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   background-color: #f7f4f1;
+  padding: 2rem 0 1rem 0;
+  position: relative;
+  text-align: center;
 }
 
-.category h1 {
+.category2,
+.category4 {
+  background-color: #6e4b39;
+}
+
+.category h1,
+.category2 h1,
+.category3 h1,
+.category4 h1 {
   font-size: 10vw;
   text-align: center;
   margin: 0;
 }
 
-.category {
-  padding: 2rem 0 1rem 0;
-  height: 100vh;
-  position: relative;
-  background-color: #f7f4f1;
-  text-align: center;
+.category2 h1,
+.category2 h3,
+.category4 h1,
+.category4 h3 {
+  color: #f7f4f1;
 }
 
 .intro {
@@ -132,39 +220,65 @@ body {
   margin-bottom: 1rem;
 }
 
-.horizontalScroll {
+.horizontalScroll,
+.horizontalScroll2,
+.horizontalScroll3,
+.horizontalScroll4 {
   height: 70%;
+  width: 100%;
   position: relative;
   overflow: hidden;
-  padding: 2rem 0;
 }
 
-.images {
+.images,
+.images2,
+.images3,
+.images4 {
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-.item {
-  width: 100%;
+.theHorizontalImage {
+  width: 90%;
+  height: auto;
+  object-fit: fill;
+  margin: 0 auto;
+}
+
+.item img,
+.item2 img,
+.item3 img,
+.item4 img {
+  transition: 1s;
+  cursor: pointer;
+}
+
+.item img:hover,
+.item2 img:hover,
+.item3 img:hover,
+.item4 img:hover {
+  transform: translateY(-3%);
+}
+
+.item,
+.item2,
+.item3,
+.item4 {
+  width: 40vw;
   height: auto;
   display: flex;
   justify-content: center;
   flex: 0 0 auto;
 }
 
-.theHorizontalImage {
-  width: 70%;
-  height: auto;
-  object-fit: fill;
-  margin: 0 auto;
+.animateText {
+  opacity: 0;
+  transition: 2s;
+  transform: translateY(-50%);
 }
 
-.item img {
-  transition: 1s;
-  cursor: pointer;
-}
-
-.item img:hover {
-  transform: translateY(-3%);
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
