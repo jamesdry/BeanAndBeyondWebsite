@@ -144,8 +144,10 @@ const cheddarText = document.getElementById("cheddar");
 // coffee text
 const bitterText = document.getElementById("bitterOrSweet");
 const hotColdText = document.getElementById("hotOrCold");
+const coffeeEspressoText = document.getElementById("coffeeOrEspresso");
+const milkFoamText = document.getElementById("milkFoam?");
 
-// button
+// snack button
 const saveProduct = document.getElementById("saveProduct");
 const resetProduct = document.getElementById("resetProduct");
 
@@ -170,11 +172,18 @@ const resetSpinach = document.getElementById("resetSpinach");
 const saveCheddar = document.getElementById("saveCheddar");
 const resetCheddar = document.getElementById("resetCheddar");
 
+// coffee button
 const saveBitterSweet = document.getElementById("saveBitterSweet");
 const resetBitterSweet = document.getElementById("resetBitterSweet");
 
 const saveHotCold = document.getElementById("saveHotCold");
 const resetHotCold = document.getElementById("resetHotCold");
+
+const saveCoffeeEspresso = document.getElementById("saveCoffeeEspresso");
+const resetCoffeeEspresso = document.getElementById("resetCoffeeEspresso");
+
+const saveMilkFoam = document.getElementById("saveMilkFoam");
+const resetMilkFoam = document.getElementById("resetMilkFoam");
 
 const getProductRecommendation = document.getElementById("recommendProduct");
 const seeProductDetails = document.getElementById("seeDetails");
@@ -193,6 +202,8 @@ const cheddarSelection = document.getElementById("cheddarYesNo");
 // coffee
 const bitterSelection = document.getElementById("bitterorsweet");
 const hotcoldSelection = document.getElementById("hotcold");
+const coffeeEspressoSelection = document.getElementById("coffeeEspresso");
+const milkFoamSelection = document.getElementById("milkfoam");
 
 function showProductDetailsAndQuestionaireDisableQuestionaire() {
   seeProductDetails.style.display = "block";
@@ -221,6 +232,14 @@ function answerQuizAgain() {
 
 function resetProductIndex() {
   productSelection.selectedIndex = 0;
+}
+
+function resetmilkfoamindex() {
+  milkFoamSelection.selectedIndex = 0;
+}
+
+function resetcoffeeespressoindex() {
+  coffeeEspressoSelection.selectedIndex = 0;
 }
 
 function resetbitterindex() {
@@ -257,6 +276,34 @@ function resetspinachindex() {
 
 function resetcheddarindex() {
   cheddarSelection.selectedIndex = 0;
+}
+
+function resetmilkfoam() {
+  milkFoamText.style.display = "none";
+  milkFoamSelection.style.display = "none";
+  saveMilkFoam.style.display = "none";
+  resetMilkFoam.style.display = "none";
+}
+
+function showmilkfoam() {
+  milkFoamText.style.display = "block";
+  milkFoamSelection.style.display = "block";
+  saveMilkFoam.style.display = "block";
+  resetMilkFoam.style.display = "block";
+}
+
+function resetcoffeeespresso() {
+  coffeeEspressoText.style.display = "none";
+  coffeeEspressoSelection.style.display = "none";
+  saveCoffeeEspresso.style.display = "none";
+  resetCoffeeEspresso.style.display = "none";
+}
+
+function showcoffeeespresso() {
+  coffeeEspressoText.style.display = "block";
+  coffeeEspressoSelection.style.display = "block";
+  saveCoffeeEspresso.style.display = "block";
+  resetCoffeeEspresso.style.display = "block";
 }
 
 function resetbitter() {
@@ -393,6 +440,22 @@ function showgetproductrecommendation() {
   getProductRecommendation.style.display = "block";
 }
 
+function enablemilkfoamselection() {
+  milkFoamSelection.disabled = false;
+}
+
+function disablemilkfoamselection() {
+  milkFoamSelection.disabled = true;
+}
+
+function enableCoffeeEspressoSelection() {
+  coffeeEspressoSelection.disabled = false;
+}
+
+function disableCoffeeEspressoSelection() {
+  coffeeEspressoSelection.disabled = true;
+}
+
 function enableBitterSelection() {
   bitterSelection.disabled = false;
 }
@@ -486,6 +549,8 @@ function enableAllSelection() {
   // coffee
   bitterSelection.disabled = false;
   hotcoldSelection.disabled = false;
+  coffeeEspressoSelection.disabled = false;
+  milkFoamSelection.disabled = false;
 }
 
 function resetAll() {
@@ -510,6 +575,10 @@ function resetAll() {
   resetbitterindex();
   resethotorcold();
   resethotcoldindex();
+  resetcoffeeespresso();
+  resetcoffeeespressoindex();
+  resetmilkfoam();
+  resetmilkfoamindex();
 }
 
 saveProduct.onclick = function () {
@@ -691,18 +760,66 @@ resetBitterSweet.onclick = function () {
 
 saveHotCold.onclick = function () {
   if (
-    (bitterSelection.selectedIndex == 0 &&
-      hotcoldSelection.selectedIndex == 0) ||
-    (bitterSelection.selectedIndex == 0 && hotcoldSelection.selectedIndex == 1)
+    bitterSelection.selectedIndex == 0 &&
+    hotcoldSelection.selectedIndex == 0
   ) {
     showgetproductrecommendation();
+    disablehotcoldselection();
+  } else if (
+    bitterSelection.selectedIndex == 0 &&
+    hotcoldSelection.selectedIndex == 1
+  ) {
+    showcoffeeespresso();
+    disablehotcoldselection();
+  } else if (
+    bitterSelection.selectedIndex == 1 &&
+    hotcoldSelection.selectedIndex == 0
+  ) {
+    showmilkfoam();
     disablehotcoldselection();
   }
 };
 
 resetHotCold.onclick = function () {
+  resetcoffeeespresso();
+  resetcoffeeespressoindex();
+  resetmilkfoam();
+  resetmilkfoamindex();
   hidegetproductrecommendation();
   enablehotcoldselection();
+  enableCoffeeEspressoSelection();
+  enablemilkfoamselection();
+};
+
+saveMilkFoam.onclick = function () {
+  if (
+    bitterSelection.selectedIndex == 1 &&
+    hotcoldSelection.selectedIndex == 0 &&
+    milkFoamSelection.selectedIndex == 0
+  ) {
+    disablemilkfoamselection();
+    showgetproductrecommendation();
+  }
+};
+
+resetMilkFoam.onclick = function () {
+  hidegetproductrecommendation();
+  enablemilkfoamselection();
+};
+
+saveCoffeeEspresso.onclick = function () {
+  if (
+    coffeeEspressoSelection.selectedIndex == 0 ||
+    coffeeEspressoSelection.selectedIndex == 1
+  ) {
+    showgetproductrecommendation();
+    disableCoffeeEspressoSelection();
+  }
+};
+
+resetCoffeeEspresso.onclick = function () {
+  hidegetproductrecommendation();
+  enableCoffeeEspressoSelection();
 };
 
 getProductRecommendation.onclick = function () {
@@ -853,7 +970,8 @@ getProductRecommendation.onclick = function () {
   } else if (
     bitterSelection.selectedIndex == 0 &&
     hotcoldSelection.selectedIndex == 1 &&
-    productSelection.selectedIndex == 1
+    productSelection.selectedIndex == 1 &&
+    coffeeEspressoSelection.selectedIndex == 0
   ) {
     resetAll();
     imageReference.style.display = "block";
@@ -862,6 +980,44 @@ getProductRecommendation.onclick = function () {
     showProductDetailsAndQuestionaireDisableQuestionaire();
     seeProductDetails.onclick = function () {
       location.href = "coldbrewcofee.html";
+    };
+    answerQuestionaire.onclick = function () {
+      resetAll();
+      answerQuizAgain();
+      imageReference.style.display = "none";
+    };
+  } else if (
+    bitterSelection.selectedIndex == 0 &&
+    hotcoldSelection.selectedIndex == 1 &&
+    productSelection.selectedIndex == 1 &&
+    coffeeEspressoSelection.selectedIndex == 1
+  ) {
+    resetAll();
+    imageReference.style.display = "block";
+    imageReference.src = document.getElementById("icedespresso").src;
+    recommendedProducts.innerHTML = "We Recommend Iced Espresso For You !";
+    showProductDetailsAndQuestionaireDisableQuestionaire();
+    seeProductDetails.onclick = function () {
+      location.href = "iceEspresso.html";
+    };
+    answerQuestionaire.onclick = function () {
+      resetAll();
+      answerQuizAgain();
+      imageReference.style.display = "none";
+    };
+  } else if (
+    bitterSelection.selectedIndex == 1 &&
+    hotcoldSelection.selectedIndex == 0 &&
+    milkFoamSelection.selectedIndex == 0 &&
+    productSelection.selectedIndex == 1
+  ) {
+    resetAll();
+    imageReference.style.display = "block";
+    imageReference.src = document.getElementById("cappuccino").src;
+    recommendedProducts.innerHTML = "We Recommend Cappuccino For You !";
+    showProductDetailsAndQuestionaireDisableQuestionaire();
+    seeProductDetails.onclick = function () {
+      location.href = "cappuccino.html";
     };
     answerQuestionaire.onclick = function () {
       resetAll();

@@ -1,7 +1,7 @@
 var loadingScreen;
 
 function loadingScreen() {
-  loadingScreen = setTimeout(showHomePage, 100);
+  loadingScreen = setTimeout(showHomePage, 4000);
   //4000
 }
 

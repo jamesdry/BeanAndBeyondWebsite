@@ -202,7 +202,16 @@ body {
 #saveSpinach,
 #resetSpinach,
 #saveCheddar,
-#resetCheddar {
+#resetCheddar,
+#saveBitterSweet,
+#resetBitterSweet,
+#saveHotCold,
+#resetHotCold,
+#saveCoffeeEspresso,
+#resetCoffeeEspresso,
+#saveMilkFoam,
+#resetMilkFoam,
+#recommendProduct {
   transition: 0.5s;
 }
 
@@ -231,7 +240,16 @@ body {
 #saveSpinach:hover,
 #resetSpinach:hover,
 #saveCheddar:hover,
-#resetCheddar:hover {
+#resetCheddar:hover,
+#saveBitterSweet:hover,
+#resetBitterSweet:hover,
+#saveHotCold:hover,
+#resetHotCold:hover,
+#saveCoffeeEspresso:hover,
+#resetCoffeeEspresso:hover,
+#saveMilkFoam:hover,
+#resetMilkFoam:hover,
+#recommendProduct:hover {
   transform: translateY(-10%);
 }
 
