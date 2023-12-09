@@ -100,7 +100,8 @@ body {
 .scrollDown,
 .scrollDown2,
 .scrollDown3,
-.scrollDown4 {
+.scrollDown4,
+.scrollDown5 {
   position: absolute;
   top: 500px;
   right: 0;
@@ -113,14 +114,16 @@ body {
 
 .scrollDown2,
 .scrollDown3,
-.scrollDown4 {
+.scrollDown4,
+.scrollDown5 {
   top: 600px;
 }
 
 .scrollDown h3,
 .scrollDown2 h3,
 .scrollDown3 h3,
-.scrollDown4 h3 {
+.scrollDown4 h3,
+.scrollDown5 h3 {
   font-family: "Poppins", sans-serif;
   font-size: 1vw;
   color: black;
@@ -178,7 +181,8 @@ body {
 .category,
 .category2,
 .category3,
-.category4 {
+.category4,
+.category5 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -197,7 +201,8 @@ body {
 .category h1,
 .category2 h1,
 .category3 h1,
-.category4 h1 {
+.category4 h1,
+.category5 h1 {
   font-size: 10vw;
   text-align: center;
   margin: 0;
@@ -223,7 +228,8 @@ body {
 .horizontalScroll,
 .horizontalScroll2,
 .horizontalScroll3,
-.horizontalScroll4 {
+.horizontalScroll4,
+.horizontalScroll5 {
   height: 70%;
   width: 100%;
   position: relative;
@@ -233,7 +239,8 @@ body {
 .images,
 .images2,
 .images3,
-.images4 {
+.images4,
+.images5 {
   height: 100%;
   display: flex;
   align-items: center;
@@ -249,7 +256,8 @@ body {
 .item img,
 .item2 img,
 .item3 img,
-.item4 img {
+.item4 img,
+.item5 img {
   transition: 1s;
   cursor: pointer;
 }
@@ -257,14 +265,16 @@ body {
 .item img:hover,
 .item2 img:hover,
 .item3 img:hover,
-.item4 img:hover {
+.item4 img:hover,
+.item5 img:hover {
   transform: translateY(-3%);
 }
 
 .item,
 .item2,
 .item3,
-.item4 {
+.item4,
+.item5 {
   width: 40vw;
   height: auto;
   display: flex;

@@ -23,6 +23,7 @@ let category1 = gsap.utils.toArray(".item");
 let category2 = gsap.utils.toArray(".item2");
 let category3 = gsap.utils.toArray(".item3");
 let category4 = gsap.utils.toArray(".item4");
+let category5 = gsap.utils.toArray(".item5");
 
 gsap.to(category1, {
   xPercent: -100 * (category1.length - 1),
@@ -65,5 +66,16 @@ gsap.to(category4, {
     pin: true,
     scrub: 1,
     snap: 1 / (category4.length - 1),
+  },
+});
+
+gsap.to(category5, {
+  xPercent: -100 * (category5.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".category5",
+    pin: true,
+    scrub: 1,
+    snap: 1 / (category5.length - 1),
   },
 });

@@ -117,7 +117,7 @@
       </div>
     </section>
 
-    <section class="questionaire">
+    <section class="questionaire" id="linkToQuiz" style="display: none">
       <div class="container quiz">
         <div class="row recommendationsButton">
           <div class="col-lg-6 recommend">
@@ -258,7 +258,7 @@
         <div class="container" style="background-color: #f7f4f1">
           <div class="row">
             <div class="col text-center designCup" style="margin: 20px">
-              <a href="merchandise.html">
+              <a href="merchandise.html#cupCustom">
                 <button type="button" class="btn btn-lg designButton">
                   Design Your Custom Bean & Beyond Coffee Cup Now !
                 </button>
@@ -270,14 +270,54 @@
       <div class="parallax2"></div>
     </section>
 
-    <section class="footer" id="myFooter" style="display: none">
+    <section
+      class="footer"
+      id="myFooter"
+      style="display: none; border-top: 3px solid black"
+    >
       <footer>
         <div class="container">
           <div class="row text-center">
-            <h5 style="font-size: 2vw; padding: 5px">
-              Bean & Beyond &copy; 2023
-            </h5>
+            <div
+              class="col-lg-6"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 30px;
+              "
+            >
+              <a
+                href="contact.html"
+                style="text-decoration: none"
+                class="linkToContact"
+              >
+                <h5
+                  class="tocontact"
+                  style="
+                    font-size: 3vw;
+                    padding: 10px;
+                    color: black;
+                    background-color: #f7f4f1;
+                    border: 3px solid black;
+                    border-radius: 10px;
+                  "
+                >
+                  Click Me To Contact Bean & Beyond Now !
+                </h5>
+              </a>
+            </div>
+
+            <div class="col-lg-6">
+              <iframe
+                src="https://www.google.com/maps/d/embed?mid=1y0plIJHt-gxn1nQFKhm8E2oimBVX5UU&ehbc=2E312F&noprof=1"
+                width="85%"
+                height="300"
+                style="margin: 20px"
+              ></iframe>
+            </div>
           </div>
+          <div class="text-center">Bean & Beyond &copy; 2023</div>
         </div>
       </footer>
     </section>

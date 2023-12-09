@@ -168,7 +168,7 @@ body {
 
 .animate {
   opacity: 0.5;
-  transition: 2s;
+  transition: 3s;
   transform: translateX(-50%);
 }
 
@@ -186,7 +186,23 @@ body {
 #clickBlueColor,
 #clickVanillaColor,
 #clickPurpleColor,
-#placeOrder {
+#placeOrder,
+#saveProduct,
+#resetProduct,
+#saveBurger,
+#resetBurger,
+#saveChicken,
+#resetChicken,
+#saveEggs,
+#resetEggs,
+#saveBacon,
+#resetBacon,
+#saveSausage,
+#resetSausage,
+#saveSpinach,
+#resetSpinach,
+#saveCheddar,
+#resetCheddar {
   transition: 0.5s;
 }
 
@@ -199,7 +215,23 @@ body {
 #clickBlueColor:hover,
 #clickVanillaColor:hover,
 #clickPurpleColor:hover,
-#placeOrder:hover {
+#placeOrder:hover,
+#saveProduct:hover,
+#resetProduct:hover,
+#saveBurger:hover,
+#resetBurger:hover,
+#saveChicken:hover,
+#resetChicken:hover,
+#saveEggs:hover,
+#resetEggs:hover,
+#saveBacon:hover,
+#resetBacon:hover,
+#saveSausage:hover,
+#resetSausage:hover,
+#saveSpinach:hover,
+#resetSpinach:hover,
+#saveCheddar:hover,
+#resetCheddar:hover {
   transform: translateY(-10%);
 }
 
@@ -211,4 +243,139 @@ body {
 .linkToProducts:hover,
 .answerquiz:hover {
   transform: translateY(-10%);
+}
+
+@media screen and (max-width: 1000px) {
+  .linkToProducts,
+  .answerquiz,
+  #recommendedProduct {
+    font-size: 3vw !important;
+  }
+}
+
+.scrolldown,
+.scrolldown2 {
+  position: absolute;
+  top: 650px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 34px;
+  height: 55px;
+}
+
+.scrolldown h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1vw;
+  color: black;
+}
+
+@media screen and (max-width: 1000px) {
+  .scrolldown h3 {
+    font-size: 2.5vw !important;
+  }
+}
+
+.mouse {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid black;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: black;
+  animation-name: scrolling;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+.listOfMerchandise {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150vh;
+  background-color: #f7f4f1;
+  position: relative;
+  text-align: center;
+}
+
+.listOfMerchandise h1 {
+  font-size: 10vw;
+  text-align: center;
+  margin: 0;
+}
+
+.listOfmerchandise {
+  margin-bottom: 1.5rem;
+  color: black;
+  display: block;
+}
+
+.horizontalScroll {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.images {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.theHorizontalImage {
+  width: 90%;
+  height: auto;
+  object-fit: fill;
+  margin: 0 auto;
+}
+
+.item img {
+  transition: 1s;
+  box-shadow: 5px 3px 5px black;
+  cursor: pointer;
+}
+
+.item img:hover {
+  transform: translateY(-3%);
+
+  box-shadow: 5px 5px 10px black;
+}
+
+.item {
+  width: 25vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .recommendation {
+    margin-top: 450px;
+  }
 }

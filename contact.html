@@ -26,7 +26,7 @@
     <title>Bean & Beyond Coffee Shop - Contact Us</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top" id="beansAndBeyondWebsite">
+    <nav class="navbar navbar-expand-lg fixed-top" id="beansAndBeyondWebsite">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html#bodys">
           <img
@@ -58,6 +58,54 @@
         /></a>
       </div>
     </nav>
+
+    <section class="contactForm">
+      <div class="listContact hidden">
+        <div class="contact">
+          <h1 class="text-center" style="margin-bottom: 20px">Contact Us !</h1>
+          <form action="#">
+            <h3>Name</h3>
+            <input
+              required
+              type="text"
+              style="
+                font-size: 2vw;
+                border: 3px solid black;
+                margin-bottom: 20px;
+              "
+            />
+            <h3>Email</h3>
+            <input
+              required
+              type="email"
+              style="
+                font-size: 2vw;
+                border: 3px solid black;
+                margin-bottom: 20px;
+              "
+            />
+            <h3>Message</h3>
+            <textarea
+              name="Message"
+              id="Message"
+              style="width: 100%; border: 3px solid black; margin-bottom: 20px"
+            ></textarea>
+            <a href="mailto:bean&beyond@gmail.com" class="submitContact">
+              <input
+                type="submit"
+                value="Submit"
+                style="
+                  padding: 20px;
+                  background-color: black;
+                  color: #f7f4f1;
+                  font-size: 2vw;
+                "
+              />
+            </a>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

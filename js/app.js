@@ -10,6 +10,7 @@ function showHomePage() {
   document.getElementById("loading").style.display = "none";
   document.getElementById("loadingGIF").style.display = "none";
   document.getElementById("welcomePage").style.display = "block";
+  document.getElementById("linkToQuiz").style.display = "block";
   document.getElementById("mouseAnimate").style.display = "block";
   document.getElementById("beansAndBeyondWebsite").style.display = "block";
   document.getElementById("signatureBlend").style.display = "block";

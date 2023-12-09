@@ -26,7 +26,7 @@
     <title>Bean & Beyond Coffee Shop - Merchandise</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top" id="beansAndBeyondWebsite">
+    <nav class="navbar navbar-expand-lg fixed-top" id="beansAndBeyondWebsite">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html#bodys">
           <img
@@ -59,21 +59,96 @@
       </div>
     </nav>
 
+    <!-- Merchandise Horizontal Scroll -->
+
+    <section
+      class="listOfMerchandise"
+      style="height: 150vh; border-top: 3px solid black"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="listOfmerchandise">
+              <div class="scrolldown" id="animateMouse">
+                <div class="mouse">
+                  <div class="scroller"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="horizontalScroll">
+        <div class="images" id="horizontallScrollImage">
+          <div class="item">
+            <a href="plasticCup.html">
+              <img
+                class="theHorizontalImage"
+                src="img/ColorChangingPlasticReusableHotCupPearlLid.jpg"
+                alt="ColorChangingPlasticReusableHotCupPearlLid"
+              />
+            </a>
+          </div>
+          <div class="item">
+            <a href="copperPinStainlessTumblr.html">
+              <img
+                class="theHorizontalImage"
+                src="img/copperpintumbler.jpg"
+                alt="copperpintumbler"
+              />
+            </a>
+          </div>
+          <div class="item">
+            <a href="recyclePlasticTumblr.html">
+              <img
+                class="theHorizontalImage"
+                src="img/recyclePlasticTumblr.jpg"
+                alt="recyclePlasticTumblr"
+              />
+            </a>
+          </div>
+          <div class="item">
+            <a href="blackTumblr.html">
+              <img
+                class="theHorizontalImage"
+                src="img/blackTumblr.jpg"
+                alt="blackTumblr"
+              />
+            </a>
+          </div>
+          <div class="item">
+            <a href="desktopCeramicMug.html">
+              <img
+                class="theHorizontalImage"
+                src="img/mugdesktopceramic.jpg"
+                alt="mugdesktopceramic"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Design Cup User Interaction -->
 
-    <section class="designCup animate" style="height: 100vh">
+    <section
+      id="cupCustom"
+      class="designCup animate"
+      style="height: 100vh; background-color: #f7f4f1"
+    >
       <div class="container">
         <div class="row">
           <div class="col-lg-6 text-center" style="margin-top: 30px">
             <div id="cup">
               <img
+                class="animate"
                 src="img/coffeeCupuserInteraction/bean & beyond/bean___beyond-2-removebg-preview.png"
                 alt="withoutLogoCoffeeCup"
               />
             </div>
           </div>
           <div class="col-lg-6" style="margin-top: 30px">
-            <div class="userInteract">
+            <div class="userInteract animate">
               <h1 class="text-center" style="padding-top: 20px">
                 Design Your Own Custom Bean & Beyond Coffee Cup !
               </h1>
@@ -155,24 +230,27 @@
                     <div class="col colorPickerPurple"></div>
                   </div>
                 </div>
+                <button
+                  id="placeOrder"
+                  type="button"
+                  class="btn btn-sm"
+                  style="
+                    background-color: #e9dbc1;
+                    margin-top: 5px;
+                    margin-left: 10px;
+                    margin-bottom: 50px;
+                    border: 2px solid black;
+                    text-decoration: none;
+                    color: black;
+                    display: none;
+                  "
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  Place Order
+                </button>
               </div>
-              <button
-                id="placeOrder"
-                type="button"
-                class="btn btn-sm"
-                style="
-                  display: none;
-                  background-color: #e9dbc1;
-                  margin-top: 5px;
-                  margin-left: 20px;
-                  margin-bottom: 50px;
-                  border: 2px solid black;
-                  text-decoration: none;
-                  color: black;
-                "
-              >
-                Place Order
-              </button>
+
               <!-- Transparent Cup Without Logo -->
               <img
                 src="img/coffeeCupuserInteraction/bean & beyond/bean___beyond-2-removebg-preview.png"
@@ -291,12 +369,45 @@
       </div>
     </section>
 
-    <!-- Questionaire user preferences -->
-    <section
-      id="quiz"
-      class="recommendation animate"
-      style="height: 100vh; margin-top: 450px"
+    <!-- Place Order Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      aria-hidden="true"
+      tabindex="-1"
     >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img
+              src="img/successPlaceOrder.png"
+              alt="successPlaceOrder"
+              style="width: 100%"
+            />
+            <p class="text-center modalText">
+              Your order has been successfully placed,
+            </p>
+            <p class="text-center">
+              please pick up your order at the nearest place !
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              OK.
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Questionaire user preferences -->
+    <section id="quiz" class="recommendation animate" style="height: 100vh">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 text-center" style="margin-top: 30px">
@@ -310,7 +421,10 @@
             </div>
           </div>
           <div class="col-lg-6" style="margin-top: 30px">
-            <div class="rightSide">
+            <div
+              class="rightSide"
+              style="border: 3px solid black; box-shadow: 5px 3px 5px black"
+            >
               <h1 class="text-center" style="padding-top: 20px">
                 Recommendation Questionaire.
               </h1>
@@ -359,6 +473,9 @@
                 >
                   Reset Preferences
                 </button>
+                <h6 style="margin-left: 20px; margin-top: 40px">
+                  All of our snacks contain eggs, please be advised.
+                </h6>
               </div>
 
               <!-- Question 1 -->
@@ -734,6 +851,110 @@
                 </div>
               </div>
 
+              <h5
+                style="margin-left: 20px; margin-top: 10px; display: none"
+                id="bitterOrSweet"
+              >
+                Do you like bitter or sweet coffee ?
+              </h5>
+              <div id="bitterSweetDropdown">
+                <select
+                  name="bitterorsweet"
+                  id="bitterorsweet"
+                  style="margin: 20px; width: auto; display: none"
+                  class="form-select form-select"
+                  aria-label=".form-select example"
+                >
+                  <option>Bitter.</option>
+                  <option>Sweet.</option>
+                </select>
+
+                <div style="display: flex">
+                  <button
+                    id="saveBitterSweet"
+                    type="button"
+                    class="btn btn-sm"
+                    style="
+                      background-color: #e9dbc1;
+                      margin-top: 5px;
+                      margin-left: 20px;
+                      border: 2px solid black;
+                      margin-bottom: 20px;
+                      display: none;
+                    "
+                  >
+                    Save
+                  </button>
+                  <button
+                    id="resetBitterSweet"
+                    type="button"
+                    class="btn btn-sm"
+                    style="
+                      background-color: #e9dbc1;
+                      margin-top: 5px;
+                      margin-left: 20px;
+                      border: 2px solid black;
+                      margin-bottom: 20px;
+                      display: none;
+                    "
+                  >
+                    Reset
+                  </button>
+                </div>
+              </div>
+
+              <h5
+                style="margin-left: 20px; margin-top: 10px; display: none"
+                id="hotOrCold"
+              >
+                Do you like hot or cold coffee ?
+              </h5>
+              <div id="hotColdDropdown">
+                <select
+                  name="hotcold"
+                  id="hotcold"
+                  style="margin: 20px; width: auto; display: none"
+                  class="form-select form-select"
+                  aria-label=".form-select example"
+                >
+                  <option>Hot.</option>
+                  <option>Cold.</option>
+                </select>
+
+                <div style="display: flex">
+                  <button
+                    id="saveHotCold"
+                    type="button"
+                    class="btn btn-sm"
+                    style="
+                      background-color: #e9dbc1;
+                      margin-top: 5px;
+                      margin-left: 20px;
+                      border: 2px solid black;
+                      margin-bottom: 20px;
+                      display: none;
+                    "
+                  >
+                    Save
+                  </button>
+                  <button
+                    id="resetHotCold"
+                    type="button"
+                    class="btn btn-sm"
+                    style="
+                      background-color: #e9dbc1;
+                      margin-top: 5px;
+                      margin-left: 20px;
+                      border: 2px solid black;
+                      margin-bottom: 20px;
+                      display: none;
+                    "
+                  >
+                    Reset
+                  </button>
+                </div>
+              </div>
+
               <!-- Get Product Recommendation -->
               <button
                 id="recommendProduct"
@@ -797,12 +1018,61 @@
                 Answer Questionaire.
               </a>
 
-              <!-- Product Pictures -->
+              <!-- Product Snack Pictures -->
               <img
                 src="img/chickenMapleSandwich.jpg"
                 alt="chickenMapleSandwich"
                 id="chickenMapleSandwich"
-                class="hidden"
+                class="hidden animate"
+              />
+
+              <img
+                src="img/baconGouda&eggSandwich.jpg"
+                alt="baconGouda"
+                id="baconGouda"
+                class="hidden animate"
+              />
+
+              <img
+                src="img/turkeyBaconSandwich.jpg"
+                alt="turkeyBaconSandwich"
+                id="turkeyBaconSandwich"
+                class="hidden animate"
+              />
+
+              <img
+                src="img/sausageEggCheddarSandwich.jpg"
+                alt="sausageEggCheddarSandwich"
+                id="sausageEggCheddarSandwich"
+                class="hidden animate"
+              />
+
+              <img
+                src="img/baconSausageEggWrap.jpg"
+                alt="baconSausageEggWrap"
+                id="baconSausageEggWrap"
+                class="hidden animate"
+              />
+
+              <img
+                src="img/spinachFetaWrap.jpg"
+                alt="spinachFetaWrap"
+                id="spinachFetaWrap"
+                class="hidden animate"
+              />
+
+              <img
+                src="img/coldbrewcoffee.jpg"
+                alt="coldbrewcofee"
+                id="coldbrewcofee"
+                class="hidden animate"
+              />
+
+              <img
+                src="img/caffeAmericano.jpg"
+                alt="caffeAmericano"
+                id="caffeAmericano"
+                class="hidden animate"
               />
             </div>
           </div>
@@ -826,6 +1096,8 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+  <script src="./js/ScrollTrigger.min.js"></script>
   <script src="js/merchandise.js"></script>
   <script></script>
 </html>
