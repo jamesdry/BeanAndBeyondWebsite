@@ -292,3 +292,62 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+.item .content-overlay,
+.item2 .content-overlay,
+.item3 .content-overlay,
+.item4 .content-overlay,
+.item5 .content-overlay {
+  position: absolute;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.item:hover .content-overlay,
+.item2:hover .content-overlay,
+.item3:hover .content-overlay,
+.item4:hover .content-overlay,
+.item5:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, 50%);
+  transition: all 0.3s ease-in-out 0s;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.item:hover .content-details,
+.item2:hover .content-details,
+.item3:hover .content-details,
+.item4:hover .content-details,
+.item5:hover .content-details {
+  top: 0;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3 {
+  color: #f7f4f1;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  font-size: 2vw;
+}
+
+.content-details p {
+  color: #f7f4f1;
+  font-size: 1.5vw;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
